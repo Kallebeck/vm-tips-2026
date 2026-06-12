@@ -84,20 +84,38 @@ def v(ws, row, col):
 
 def read_leaderboard(ws):
     leaderboard = []
+
     for row in range(4, 90):
         position = v(ws, row, 208)
         name = v(ws, row, 210)
         points = v(ws, row, 211)
+
         if name and points is not None:
             try:
                 position = int(position)
             except Exception:
                 position = len(leaderboard) + 1
+
             try:
                 points = int(points)
             except Exception:
                 pass
-            leaderboard.append({"position": position, "name": str(name).strip(), "points": points})
+
+                clean_name = str(name).strip()
+                paid = "(KR)" in clean_name
+                clean_name = clean_name.replace("(KR)", "").strip()
+
+                leaderboard.append({
+                "position": position,
+                "name": clean_name,
+                "paid": paid,
+                "points": points
+            })
+
+    if not leaderboard:
+        raise RuntimeError("Hittade ingen topplista.")
+
+    return leaderboard
     if not leaderboard:
         raise RuntimeError("Hittade ingen topplista.")
     return leaderboard
