@@ -1,3 +1,4 @@
+from zoneinfo import ZoneInfo
 import json
 import os
 import re
@@ -8,6 +9,7 @@ from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
 import requests
 from openpyxl import load_workbook
+
 
 EXCEL_SHARE_URL = os.environ.get("EXCEL_SHARE_URL", "").strip()
 EXCEL_FILE = Path("latest-vm-tips.xlsm")
@@ -151,7 +153,7 @@ def main():
     ws = workbook["Resultat & tabell"]
 
     data = {
-        "updated": from zoneinfo import ZoneInfo,
+        "updated": datetime.now(ZoneInfo("Europe/Stockholm")).strftime("%Y-%m-%d %H:%M"),
         "leaderboard": read_leaderboard(ws),
         "matches": read_matches(ws),
     }
