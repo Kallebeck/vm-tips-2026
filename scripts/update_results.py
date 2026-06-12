@@ -101,11 +101,11 @@ def read_leaderboard(ws):
             except Exception:
                 pass
 
-                clean_name = str(name).strip()
-                paid = "(KR)" in clean_name
-                clean_name = clean_name.replace("(KR)", "").strip()
+            clean_name = str(name).strip()
+            paid = "(KR)" in clean_name
+            clean_name = clean_name.replace("(KR)", "").strip()
 
-                leaderboard.append({
+            leaderboard.append({
                 "position": position,
                 "name": clean_name,
                 "paid": paid,
@@ -116,10 +116,6 @@ def read_leaderboard(ws):
         raise RuntimeError("Hittade ingen topplista.")
 
     return leaderboard
-    if not leaderboard:
-        raise RuntimeError("Hittade ingen topplista.")
-    return leaderboard
-
 def read_matches(ws):
     matches = []
     current_section = ""
