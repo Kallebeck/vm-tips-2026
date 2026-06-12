@@ -3,7 +3,7 @@ name: Uppdatera VM-resultat Auto
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: write
