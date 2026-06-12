@@ -151,7 +151,7 @@ def main():
     ws = workbook["Resultat & tabell"]
 
     data = {
-        "updated": datetime.now().astimezone().strftime("%Y-%m-%d %H:%M"),
+        "updated": from zoneinfo import ZoneInfo,
         "leaderboard": read_leaderboard(ws),
         "matches": read_matches(ws),
     }
