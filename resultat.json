@@ -1,40 +1,1326 @@
 {
-  "updated": "2026-06-12",
-  "results": [
-    {"name": "Aleksandra Stojcevska", "points": 12},
-    {"name": "Lars Ljungblom", "points": 12},
-    {"name": "Anders Eliasson", "points": 12},
-    {"name": "Oskar Amund", "points": 12},
-    {"name": "Jon Jonsson", "points": 12},
-    {"name": "Albin Löfberg", "points": 12},
-    {"name": "Shanna Salehi", "points": 10},
-    {"name": "Christoffer Stamgren", "points": 10},
-    {"name": "Malzjar Fatemi", "points": 10},
-    {"name": "Patrik Hermez", "points": 9},
-    {"name": "Per Nilsson", "points": 9},
-    {"name": "Tim Håkman", "points": 9},
-    {"name": "Jenny Nordgren", "points": 9},
-    {"name": "Jakob Horn", "points": 9},
-    {"name": "Stefan Setterlund", "points": 9},
-    {"name": "Christian Wallengren", "points": 9},
-    {"name": "Marcus Nilsson", "points": 9},
-    {"name": "Andreas Astlund", "points": 8},
-    {"name": "Håkan Hansson", "points": 7},
-    {"name": "Andreas Häfvenström", "points": 7},
-    {"name": "Anna Berglind", "points": 7},
-    {"name": "Lee Brustad", "points": 7},
-    {"name": "Mikael Bergqvist", "points": 7},
-    {"name": "Fredrik Olsson", "points": 7},
-    {"name": "Carolina Broddeus", "points": 7},
-    {"name": "Victor Gustavsson", "points": 7},
-    {"name": "Fredric Källebäck", "points": 7},
-    {"name": "Petri Valo", "points": 5},
-    {"name": "Pontus Thorsen", "points": 5},
-    {"name": "Mari Leion", "points": 5},
-    {"name": "Fredrik Hansson", "points": 4},
-    {"name": "Ditte Clemons", "points": 4},
-    {"name": "Stefan Lindberg", "points": 3},
-    {"name": "Marcus Andersson", "points": 2},
-    {"name": "Maria Löfvenholm", "points": 2}
+  "updated": "2026-06-12 08:24",
+  "leaderboard": [
+    {
+      "position": 1,
+      "name": "Aleksandra Stojcevska",
+      "points": 12
+    },
+    {
+      "position": 2,
+      "name": "Lars Ljungblom",
+      "points": 12
+    },
+    {
+      "position": 3,
+      "name": "Anders Eliasson",
+      "points": 12
+    },
+    {
+      "position": 4,
+      "name": "Oskar Amund",
+      "points": 12
+    },
+    {
+      "position": 5,
+      "name": "Jon Jonsson",
+      "points": 12
+    },
+    {
+      "position": 6,
+      "name": "Albin Löfborg",
+      "points": 12
+    },
+    {
+      "position": 7,
+      "name": "Shanna Salehi",
+      "points": 10
+    },
+    {
+      "position": 8,
+      "name": "Christoffer Stamgren",
+      "points": 10
+    },
+    {
+      "position": 9,
+      "name": "Maziyar Fatemi",
+      "points": 10
+    },
+    {
+      "position": 10,
+      "name": "Patrik Hermez",
+      "points": 9
+    },
+    {
+      "position": 11,
+      "name": "Per Nilsson",
+      "points": 9
+    },
+    {
+      "position": 12,
+      "name": "Tim Håkman",
+      "points": 9
+    },
+    {
+      "position": 13,
+      "name": "Jenny Nordgren",
+      "points": 9
+    },
+    {
+      "position": 14,
+      "name": "Jakob Horn",
+      "points": 9
+    },
+    {
+      "position": 15,
+      "name": "Stefan Setterlund",
+      "points": 9
+    },
+    {
+      "position": 16,
+      "name": "Christian Wallengren",
+      "points": 9
+    },
+    {
+      "position": 17,
+      "name": "Marcus Nilsson",
+      "points": 9
+    },
+    {
+      "position": 18,
+      "name": "Andreas Astlund",
+      "points": 8
+    },
+    {
+      "position": 19,
+      "name": "Håkan Hansson",
+      "points": 7
+    },
+    {
+      "position": 20,
+      "name": "Andreas Hafvenström",
+      "points": 7
+    },
+    {
+      "position": 21,
+      "name": "Anna Berglind",
+      "points": 7
+    },
+    {
+      "position": 22,
+      "name": "Lee Brustad",
+      "points": 7
+    },
+    {
+      "position": 23,
+      "name": "Mikael Bergqvist",
+      "points": 7
+    },
+    {
+      "position": 24,
+      "name": "Fredrik Olsson",
+      "points": 7
+    },
+    {
+      "position": 25,
+      "name": "Carolina Broddéus",
+      "points": 7
+    },
+    {
+      "position": 26,
+      "name": "Victor Gustavsson",
+      "points": 7
+    },
+    {
+      "position": 27,
+      "name": "Fredric Kallebäck",
+      "points": 7
+    },
+    {
+      "position": 28,
+      "name": "Petri Valo",
+      "points": 5
+    },
+    {
+      "position": 29,
+      "name": "Pontus Thorsen",
+      "points": 5
+    },
+    {
+      "position": 30,
+      "name": "Mari Leion",
+      "points": 5
+    },
+    {
+      "position": 31,
+      "name": "Fredrik Hansson",
+      "points": 4
+    },
+    {
+      "position": 32,
+      "name": "Ditte Clemons",
+      "points": 4
+    },
+    {
+      "position": 33,
+      "name": "Stefan Lindberg",
+      "points": 3
+    },
+    {
+      "position": 34,
+      "name": "Marcus Andersson",
+      "points": 2
+    },
+    {
+      "position": 35,
+      "name": "Maria Löfvenholm",
+      "points": 2
+    }
+  ],
+  "matches": [
+    {
+      "section": "Grupp A",
+      "match": 1,
+      "date": "2026-06-11",
+      "home": "Mexiko",
+      "away": "Sydafrika",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "score": "2–0",
+      "status": "spelad"
+    },
+    {
+      "section": "Grupp A",
+      "match": 2,
+      "date": "2026-06-12",
+      "home": "Sydkorea",
+      "away": "Czechia",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "score": "2–1",
+      "status": "spelad"
+    },
+    {
+      "section": "Grupp A",
+      "match": 25,
+      "date": "2026-06-18",
+      "home": "Czechia",
+      "away": "Sydafrika",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp A",
+      "match": 28,
+      "date": "2026-06-19",
+      "home": "Mexiko",
+      "away": "Sydkorea",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp A",
+      "match": 53,
+      "date": "2026-06-25",
+      "home": "Czechia",
+      "away": "Mexiko",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp A",
+      "match": 54,
+      "date": "2026-06-25",
+      "home": "Sydafrika",
+      "away": "Sydkorea",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp B",
+      "match": 3,
+      "date": "2026-06-12",
+      "home": "Kanada",
+      "away": "Bosnien-Herzigovina",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp B",
+      "match": 8,
+      "date": "2026-06-13",
+      "home": "Qatar",
+      "away": "Schweiz",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp B",
+      "match": 26,
+      "date": "2026-06-18",
+      "home": "Schweiz",
+      "away": "Bosnien-Herzigovina",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp B",
+      "match": 27,
+      "date": "2026-06-19",
+      "home": "Kanada",
+      "away": "Qatar",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp B",
+      "match": 51,
+      "date": "2026-06-24",
+      "home": "Schweiz",
+      "away": "Kanada",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp B",
+      "match": 52,
+      "date": "2026-06-24",
+      "home": "Bosnien-Herzigovina",
+      "away": "Qatar",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp C",
+      "match": 7,
+      "date": "2026-06-14",
+      "home": "Brasilien",
+      "away": "Marocko",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp C",
+      "match": 5,
+      "date": "2026-06-14",
+      "home": "Haiti",
+      "away": "Skottland",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp C",
+      "match": 30,
+      "date": "2026-06-20",
+      "home": "Skottland",
+      "away": "Marocko",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp C",
+      "match": 29,
+      "date": "2026-06-20",
+      "home": "Brasilien",
+      "away": "Haiti",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp C",
+      "match": 49,
+      "date": "2026-06-25",
+      "home": "Skottland",
+      "away": "Brasilien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp C",
+      "match": 50,
+      "date": "2026-06-25",
+      "home": "Marocko",
+      "away": "Haiti",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp D",
+      "match": 4,
+      "date": "2026-06-13",
+      "home": "USA",
+      "away": "Paraguay",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp D",
+      "match": 6,
+      "date": "2026-06-14",
+      "home": "Australien",
+      "away": "Turkiet",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp D",
+      "match": 32,
+      "date": "2026-06-19",
+      "home": "USA",
+      "away": "Australien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp D",
+      "match": 31,
+      "date": "2026-06-20",
+      "home": "Turkiet",
+      "away": "Paraguay",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp D",
+      "match": 59,
+      "date": "2026-06-26",
+      "home": "Turkiet",
+      "away": "USA",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp D",
+      "match": 60,
+      "date": "2026-06-26",
+      "home": "Paraguay",
+      "away": "Australien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp E",
+      "match": 10,
+      "date": "2026-06-14",
+      "home": "Tyskland",
+      "away": "Curaçao",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp E",
+      "match": 9,
+      "date": "2026-06-15",
+      "home": "Elfenbenskusten",
+      "away": "Ecuador",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp E",
+      "match": 33,
+      "date": "2026-06-20",
+      "home": "Tyskland",
+      "away": "Elfenbenskusten",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp E",
+      "match": 34,
+      "date": "2026-06-21",
+      "home": "Ecuador",
+      "away": "Curaçao",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp E",
+      "match": 55,
+      "date": "2026-06-25",
+      "home": "Curaçao",
+      "away": "Elfenbenskusten",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp E",
+      "match": 56,
+      "date": "2026-06-25",
+      "home": "Ecuador",
+      "away": "Tyskland",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp F",
+      "match": 11,
+      "date": "2026-06-14",
+      "home": "Nederländerna",
+      "away": "Japan",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp F",
+      "match": 12,
+      "date": "2026-06-15",
+      "home": "Sverige",
+      "away": "Tunisien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp F",
+      "match": 35,
+      "date": "2026-06-20",
+      "home": "Nederländerna",
+      "away": "Sverige",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp F",
+      "match": 36,
+      "date": "2026-06-21",
+      "home": "Tunisien",
+      "away": "Japan",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp F",
+      "match": 57,
+      "date": "2026-06-26",
+      "home": "Japan",
+      "away": "Sverige",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp F",
+      "match": 58,
+      "date": "2026-06-26",
+      "home": "Tunisien",
+      "away": "Nederländerna",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp G",
+      "match": 16,
+      "date": "2026-06-15",
+      "home": "Belgien",
+      "away": "Egypten",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp G",
+      "match": 15,
+      "date": "2026-06-16",
+      "home": "Iran",
+      "away": "Nya Zeeland",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp G",
+      "match": 39,
+      "date": "2026-06-21",
+      "home": "Belgien",
+      "away": "Iran",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp G",
+      "match": 40,
+      "date": "2026-06-22",
+      "home": "Nya Zeeland",
+      "away": "Egypten",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp G",
+      "match": 63,
+      "date": "2026-06-27",
+      "home": "Egypten",
+      "away": "Iran",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp G",
+      "match": 64,
+      "date": "2026-06-27",
+      "home": "Nya Zeeland",
+      "away": "Belgien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp H",
+      "match": 14,
+      "date": "2026-06-15",
+      "home": "Spanien",
+      "away": "Kap Verde",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp H",
+      "match": 13,
+      "date": "2026-06-16",
+      "home": "Saudiarabien",
+      "away": "Uruguay",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp H",
+      "match": 38,
+      "date": "2026-06-21",
+      "home": "Spanien",
+      "away": "Saudiarabien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp H",
+      "match": 37,
+      "date": "2026-06-22",
+      "home": "Uruguay",
+      "away": "Kap Verde",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp H",
+      "match": 65,
+      "date": "2026-06-27",
+      "home": "Kap Verde",
+      "away": "Saudiarabien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp H",
+      "match": 66,
+      "date": "2026-06-27",
+      "home": "Uruguay",
+      "away": "Spanien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp I",
+      "match": 17,
+      "date": "2026-06-16",
+      "home": "Frankrike",
+      "away": "Senegal",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp I",
+      "match": 18,
+      "date": "2026-06-17",
+      "home": "Irak",
+      "away": "Norge",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp I",
+      "match": 42,
+      "date": "2026-06-22",
+      "home": "Frankrike",
+      "away": "Irak",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp I",
+      "match": 41,
+      "date": "2026-06-23",
+      "home": "Norge",
+      "away": "Senegal",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp I",
+      "match": 61,
+      "date": "2026-06-26",
+      "home": "Norge",
+      "away": "Frankrike",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp I",
+      "match": 62,
+      "date": "2026-06-26",
+      "home": "Senegal",
+      "away": "Irak",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp J",
+      "match": 19,
+      "date": "2026-06-17",
+      "home": "Argentina",
+      "away": "Algeriet",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp J",
+      "match": 20,
+      "date": "2026-06-17",
+      "home": "Österrike",
+      "away": "Jordanien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp J",
+      "match": 43,
+      "date": "2026-06-22",
+      "home": "Argentina",
+      "away": "Österrike",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp J",
+      "match": 44,
+      "date": "2026-06-23",
+      "home": "Jordanien",
+      "away": "Algeriet",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp J",
+      "match": 69,
+      "date": "2026-06-28",
+      "home": "Algeriet",
+      "away": "Österrike",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp J",
+      "match": 70,
+      "date": "2026-06-28",
+      "home": "Jordanien",
+      "away": "Argentina",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp K",
+      "match": 23,
+      "date": "2026-06-17",
+      "home": "Portugal",
+      "away": "Kongo",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp K",
+      "match": 24,
+      "date": "2026-06-18",
+      "home": "Uzbekistan",
+      "away": "Colombia",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp K",
+      "match": 47,
+      "date": "2026-06-23",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp K",
+      "match": 48,
+      "date": "2026-06-24",
+      "home": "Colombia",
+      "away": "Kongo",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp K",
+      "match": 71,
+      "date": "2026-06-28",
+      "home": "Colombia",
+      "away": "Portugal",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp K",
+      "match": 72,
+      "date": "2026-06-28",
+      "home": "Kongo",
+      "away": "Uzbekistan",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp L",
+      "match": 22,
+      "date": "2026-06-17",
+      "home": "England",
+      "away": "Kroatien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp L",
+      "match": 21,
+      "date": "2026-06-18",
+      "home": "Ghana",
+      "away": "Panama",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp L",
+      "match": 45,
+      "date": "2026-06-23",
+      "home": "England",
+      "away": "Ghana",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp L",
+      "match": 46,
+      "date": "2026-06-24",
+      "home": "Panama",
+      "away": "Kroatien",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp L",
+      "match": 67,
+      "date": "2026-06-27",
+      "home": "Panama",
+      "away": "England",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Grupp L",
+      "match": 68,
+      "date": "2026-06-27",
+      "home": "Kroatien",
+      "away": "Ghana",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 73,
+      "date": "2026-06-28",
+      "home": "Tvåa grupp A",
+      "away": "Tvåa grupp B",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 74,
+      "date": "2026-06-29",
+      "home": "Vinnare grupp E",
+      "away": "Bästa trea ABCDF",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 75,
+      "date": "2026-06-30",
+      "home": "Vinnare grupp F",
+      "away": "Tvåa grupp C",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 76,
+      "date": "2026-06-29",
+      "home": "Vinnare grupp C",
+      "away": "Tvåa grupp F",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 77,
+      "date": "2026-06-30",
+      "home": "Vinnare grupp I",
+      "away": "Bästa trea CDFGH",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 78,
+      "date": "2026-06-30",
+      "home": "Tvåa grupp E",
+      "away": "Tvåa grupp I",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 79,
+      "date": "2026-07-01",
+      "home": "Vinnare grupp A",
+      "away": "Bästa trea CEFHI",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 80,
+      "date": "2026-07-01",
+      "home": "Vinnare grupp L",
+      "away": "Bästa trea EHIJK",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 81,
+      "date": "2026-07-02",
+      "home": "Vinnare grupp D",
+      "away": "Bästa trea BEFIJ",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 82,
+      "date": "2026-07-01",
+      "home": "Vinnare grupp G",
+      "away": "Bästa trea AEHIJ",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 83,
+      "date": "2026-07-03",
+      "home": "Tvåa grupp K",
+      "away": "Tvåa grupp L",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 84,
+      "date": "2026-07-02",
+      "home": "Vinnare grupp H",
+      "away": "Tvåa grupp J",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 85,
+      "date": "2026-07-03",
+      "home": "Vinnare grupp B",
+      "away": "Bästa trea EFGIJ",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 86,
+      "date": "2026-07-04",
+      "home": "Vinnare grupp J",
+      "away": "Tvåa grupp H",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 87,
+      "date": "2026-07-04",
+      "home": "Vinnare grupp K",
+      "away": "Bästa trea DEIJL",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Sextondelsfinal",
+      "match": 88,
+      "date": "2026-07-03",
+      "home": "Tvåa grupp D",
+      "away": "Tvåa grupp G",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Åttondelsfinal",
+      "match": 89,
+      "date": "2026-07-04",
+      "home": "Vinnare match 74",
+      "away": "Vinnare match 77",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Åttondelsfinal",
+      "match": 90,
+      "date": "2026-07-04",
+      "home": "Vinnare match 73",
+      "away": "Vinnare match 75",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Åttondelsfinal",
+      "match": 91,
+      "date": "2026-07-05",
+      "home": "Vinnare match 76",
+      "away": "Vinnare match 78",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Åttondelsfinal",
+      "match": 92,
+      "date": "2026-07-06",
+      "home": "Vinnare match 79",
+      "away": "Vinnare match 80",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Åttondelsfinal",
+      "match": 93,
+      "date": "2026-07-06",
+      "home": "Vinnare match 83",
+      "away": "Vinnare match 84",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Åttondelsfinal",
+      "match": 94,
+      "date": "2026-07-07",
+      "home": "Vinnare match 81",
+      "away": "Vinnare match 82",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Åttondelsfinal",
+      "match": 95,
+      "date": "2026-07-07",
+      "home": "Vinnare match 86",
+      "away": "Vinnare match 88",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Åttondelsfinal",
+      "match": 96,
+      "date": "2026-07-07",
+      "home": "Vinnare match 85",
+      "away": "Vinnare match 87",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Kvartsfinal",
+      "match": 97,
+      "date": "2026-07-09",
+      "home": "Vinnare match 89",
+      "away": "Vinnare match 90",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Kvartsfinal",
+      "match": 98,
+      "date": "2026-07-10",
+      "home": "Vinnare match 93",
+      "away": "Vinnare match 94",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Kvartsfinal",
+      "match": 99,
+      "date": "2026-07-11",
+      "home": "Vinnare match 91",
+      "away": "Vinnare match 92",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Kvartsfinal",
+      "match": 100,
+      "date": "2026-07-12",
+      "home": "Vinnare match 95",
+      "away": "Vinnare match 96",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Semifinal",
+      "match": 101,
+      "date": "2026-07-14",
+      "home": "Vinnare match 97",
+      "away": "Vinnare match 98",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Semifinal",
+      "match": 102,
+      "date": "2026-07-15",
+      "home": "Vinnare match 99",
+      "away": "Vinnare match 100",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Bronsmatch",
+      "match": 103,
+      "date": "2026-07-18",
+      "home": "Förlorare match 101",
+      "away": "Förlorare match 102",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    },
+    {
+      "section": "Final",
+      "match": 104,
+      "date": "2026-07-19",
+      "home": "Vinnare match 101",
+      "away": "Vinnare match 102",
+      "homeGoals": null,
+      "awayGoals": null,
+      "score": "–",
+      "status": "kommande"
+    }
   ]
 }
