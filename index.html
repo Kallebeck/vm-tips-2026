@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VM-tipset 2026</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:900px;margin:auto;padding:20px}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ddd;padding:8px}
+th{background:#f3f3f3}
+</style>
+</head>
+<body>
+<h1>🏆 VM-tipset 2026</h1>
+<p>Senast uppdaterad: <span id="updated"></span></p>
+<table>
+<thead><tr><th>Placering</th><th>Namn</th><th>Poäng</th></tr></thead>
+<tbody id="tbl"></tbody>
+</table>
+<script>
+fetch('resultat.json')
+.then(r=>r.json())
+.then(data=>{
+document.getElementById('updated').textContent=data.updated;
+const tb=document.getElementById('tbl');
+data.results.forEach((r,i)=>{
+tb.innerHTML += `<tr><td>${i+1}</td><td>${r.name}</td><td>${r.points}</td></tr>`;
+});
+});
+</script>
+</body>
+</html>
