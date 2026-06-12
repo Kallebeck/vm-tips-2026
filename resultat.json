@@ -1,14 +1,14 @@
 {
-  "updated": "2026-06-12 13:41",
+  "updated": "2026-06-12 16:34",
   "leaderboard": [
     {
       "position": 1,
-      "name": "Aleksandra Stojcevska",
+      "name": "Albin Löfborg",
       "points": 12
     },
     {
       "position": 2,
-      "name": "Lars Ljungblom",
+      "name": "Aleksandra Stojcevska",
       "points": 12
     },
     {
@@ -18,152 +18,152 @@
     },
     {
       "position": 4,
-      "name": "Oskar Amund",
+      "name": "Jon Jonsson (KR)",
       "points": 12
     },
     {
       "position": 5,
-      "name": "Jon Jonsson",
+      "name": "Lars Ljungblom (KR)",
       "points": 12
     },
     {
       "position": 6,
-      "name": "Albin Löfborg",
+      "name": "Oskar Amund",
       "points": 12
     },
     {
       "position": 7,
-      "name": "Shanna Salehi",
+      "name": "Christoffer Stamgren (KR)",
       "points": 10
     },
     {
       "position": 8,
-      "name": "Christoffer Stamgren",
-      "points": 10
-    },
-    {
-      "position": 9,
       "name": "Maziyar Fatemi",
       "points": 10
     },
     {
+      "position": 9,
+      "name": "Shanna Salehi (KR)",
+      "points": 10
+    },
+    {
       "position": 10,
-      "name": "Patrik Hermez",
+      "name": "Christian Wallengren (KR)",
       "points": 9
     },
     {
       "position": 11,
-      "name": "Per Nilsson",
+      "name": "Jakob Horn (KR)",
       "points": 9
     },
     {
       "position": 12,
-      "name": "Tim Håkman",
+      "name": "Jenny Nordgren (KR)",
       "points": 9
     },
     {
       "position": 13,
-      "name": "Jenny Nordgren",
-      "points": 9
-    },
-    {
-      "position": 14,
-      "name": "Jakob Horn",
-      "points": 9
-    },
-    {
-      "position": 15,
-      "name": "Stefan Setterlund",
-      "points": 9
-    },
-    {
-      "position": 16,
-      "name": "Christian Wallengren",
-      "points": 9
-    },
-    {
-      "position": 17,
       "name": "Marcus Nilsson",
       "points": 9
     },
     {
+      "position": 14,
+      "name": "Patrik Hermez (KR)",
+      "points": 9
+    },
+    {
+      "position": 15,
+      "name": "Per Nilsson",
+      "points": 9
+    },
+    {
+      "position": 16,
+      "name": "Stefan Setterlund",
+      "points": 9
+    },
+    {
+      "position": 17,
+      "name": "Tim Håkman",
+      "points": 9
+    },
+    {
       "position": 18,
-      "name": "Andreas Astlund",
+      "name": "Andreas Astlund (KR)",
       "points": 8
     },
     {
       "position": 19,
-      "name": "Håkan Hansson",
+      "name": "Andreas Hafvenström (KR)",
       "points": 7
     },
     {
       "position": 20,
-      "name": "Andreas Hafvenström",
-      "points": 7
-    },
-    {
-      "position": 21,
       "name": "Anna Berglind",
       "points": 7
     },
     {
+      "position": 21,
+      "name": "Carolina Broddéus (KR)",
+      "points": 7
+    },
+    {
       "position": 22,
-      "name": "Lee Brustad",
+      "name": "Fredric Kallebäck (KR)",
       "points": 7
     },
     {
       "position": 23,
-      "name": "Mikael Bergqvist",
+      "name": "Fredrik Olsson (KR)",
       "points": 7
     },
     {
       "position": 24,
-      "name": "Fredrik Olsson",
+      "name": "Håkan Hansson",
       "points": 7
     },
     {
       "position": 25,
-      "name": "Carolina Broddéus",
+      "name": "Lee Brustad (KR)",
       "points": 7
     },
     {
       "position": 26,
-      "name": "Victor Gustavsson",
+      "name": "Mikael Bergqvist",
       "points": 7
     },
     {
       "position": 27,
-      "name": "Fredric Kallebäck",
+      "name": "Victor Gustavsson (KR)",
       "points": 7
     },
     {
       "position": 28,
-      "name": "Petri Valo",
+      "name": "Mari Leion (KR)",
       "points": 5
     },
     {
       "position": 29,
-      "name": "Pontus Thorsen",
+      "name": "Petri Valo (KR)",
       "points": 5
     },
     {
       "position": 30,
-      "name": "Mari Leion",
+      "name": "Pontus Thorsen",
       "points": 5
     },
     {
       "position": 31,
-      "name": "Fredrik Hansson",
+      "name": "Ditte Clemons (KR)",
       "points": 4
     },
     {
       "position": 32,
-      "name": "Ditte Clemons",
+      "name": "Fredrik Hansson",
       "points": 4
     },
     {
       "position": 33,
-      "name": "Stefan Lindberg",
+      "name": "Stefan Lindberg (KR)",
       "points": 3
     },
     {
@@ -173,7 +173,7 @@
     },
     {
       "position": 35,
-      "name": "Maria Löfvenholm",
+      "name": "Maria Löfvenholm (KR)",
       "points": 2
     }
   ],
