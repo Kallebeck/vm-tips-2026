@@ -1,0 +1,33 @@
+name: Uppdatera VM-resultat
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-results:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checka ut repo
+        uses: actions/checkout@v4
+
+      - name: Installera Python-paket
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl requests
+
+      - name: Hämta Excel och skapa resultat.json
+        env:
+          EXCEL_SHARE_URL: "https://1drv.ms/x/c/b7d375ff935e0d7e/IQC-Mo6MGlMPTY52UX6LcnloAaD4KGZnjlnrbFO3nHtQNlM?e=kUVyap"
+        run: python scripts/update_results.py
+
+      - name: Committa uppdaterat resultat
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Uppdatera resultat.json automatiskt"
+          file_pattern: resultat.json
