@@ -23,7 +23,7 @@ jobs:
 
       - name: Hämta Excel och skapa resultat.json
         env:
-          EXCEL_SHARE_URL: "https://1drv.ms/x/c/b7d375ff935e0d7e/IQC-Mo6MGlMPTY52UX6LcnloAaioVWiVgPAHIxux_X2D7aQ"
+          EXCEL_SHARE_URL: "https://1drv.ms/x/c/b7d375ff935e0d7e/IQC-Mo6MGlMPTY52UX6LcnloAaD4KGZnjlnrbFO3nHtQNlM?e=4PeH32"
         run: python scripts/update_results.py
 
       - name: Committa uppdaterat resultat
