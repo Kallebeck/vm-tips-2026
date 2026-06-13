@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-13 07:08",
+  "updated": "2026-06-13 07:17",
   "leaderboard": [
     {
       "position": 1,
@@ -210,12 +210,6 @@
       "name": "Marcus Andersson",
       "paid": false,
       "points": 2
-    },
-    {
-      "position": 36,
-      "name": "Kalle Karlsson",
-      "paid": false,
-      "points": 20
     }
   ],
   "matches": [
