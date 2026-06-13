@@ -58,7 +58,7 @@
       <div class="hero">
         <div>
           <h1>🏆 VM-tipset 2026</h1>
-          <div class="sub">Live-ish resultat för tipset. Excel-filen delas inte publikt.</div>
+          <div class="sub">"Live-ish" resultat för tipset. WIP - Powered by Kallebeck.</div>
         </div>
         <span class="pill">Senast uppdaterad: <b id="updated">–</b></span>
       </div>
@@ -171,24 +171,29 @@ function switchTab(tab){
   document.getElementById("matchesView").classList.toggle("hide", tab !== "matches");
 }
 
-fetch("resultat.json?v=" + Date.now())
-  .then(r => r.json())
-  .then(data => {
-    appData = data;
-    document.getElementById("updated").textContent = data.updated || "–";
-    document.getElementById("leader").textContent = data.leaderboard?.[0]?.name || "–";
-    document.getElementById("count").textContent = data.leaderboard?.length || "–";
-    const played = data.matches.filter(m => m.status === "spelad").length;
-    document.getElementById("played").textContent = `${played}/${data.matches.length}`;
-    renderLeaderboard();
-    renderPodium();
-    fillMatchFilters();
-    renderMatches();
-  })
-  .catch(err => {
-    document.body.innerHTML = "<div class='wrap'><h1>Fel vid laddning</h1><p>Kunde inte läsa resultat.json.</p></div>";
-    console.error(err);
-  });
+function loadData(){
+  fetch("resultat.json?v=" + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      appData = data;
+      document.getElementById("updated").textContent = data.updated || "–";
+      document.getElementById("leader").textContent = data.leaderboard?.[0]?.name || "–";
+      document.getElementById("count").textContent = data.leaderboard?.length || "–";
+      const played = data.matches.filter(m => m.status === "spelad").length;
+      document.getElementById("played").textContent = `${played}/${data.matches.length}`;
+      renderLeaderboard();
+      renderPodium();
+      fillMatchFilters();
+      renderMatches();
+    })
+    .catch(err => {
+      console.error(err);
+    });
+}
+
+loadData();
+
+setInterval(loadData, 60000);
 
 document.getElementById("search").addEventListener("input", renderLeaderboard);
 document.getElementById("sectionFilter").addEventListener("change", renderMatches);
