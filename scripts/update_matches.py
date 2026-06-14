@@ -7,7 +7,7 @@ from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 
-SOURCE_URL = "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
+SOURCE_URL = "https://www.espn.com/soccer/scoreboard/_/league/fifa.world"
 OUTPUT_FILE = "matcher.json"
 
 ET = ZoneInfo("America/New_York")
