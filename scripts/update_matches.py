@@ -25,11 +25,11 @@ def clean(text):
 
 def parse_swedish_time(time_text, base_date):
     if not time_text:
-        return ""
+        return "", ""
 
     m = ET_TIME_RE.search(time_text)
     if not m:
-        return ""
+        return "", ""
 
     hour = int(m.group(1))
     minute = int(m.group(2) or 0)
