@@ -69,10 +69,11 @@
         <div class="card"><span>Spelade matcher</span><b id="played">–</b></div>
       </div>
 
-      <div class="tabs">
-        <button class="active" data-tab="leaderboard">Topplista</button>
-        <button data-tab="matches">Matcher/resultat</button>
-      </div>
+         <div class="tabs">
+          <button class="active" data-tab="leaderboard">Topplista</button>
+          <button data-tab="matches">Matcher/resultat</button>
+          <button data-tab="news">VM-nyheter</button>
+        </div>
     </header>
 
     <main>
@@ -94,16 +95,32 @@
         </section>
       </div>
 
-      <section id="matchesView" class="hide">
-        <div class="section-head">
-          <h2>Matcher/resultat</h2>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <select id="sectionFilter"><option value="">Alla delar</option></select>
-            <select id="statusFilter"><option value="">Alla</option><option value="spelad">Spelade</option><option value="kommande">Kommande</option></select>
-          </div>
-        </div>
-        <div id="matchesBody" class="match-list"></div>
-      </section>
+    <section id="matchesView" class="hide">
+  <div class="section-head">
+    <h2>Matcher/resultat</h2>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <select id="sectionFilter">
+        <option value="">Alla delar</option>
+      </select>
+
+      <select id="statusFilter">
+        <option value="">Alla</option>
+        <option value="spelad">Spelade</option>
+        <option value="kommande">Kommande</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="matchesBody" class="match-list"></div>
+</section>
+
+<section id="newsView" class="hide">
+  <div class="section-head">
+    <h2>VM-nyheter</h2>
+  </div>
+
+  <div id="newsBody" class="match-list"></div>
+</section>
     </main>
 
     <footer>Byggd som en statisk GitHub Pages-sida. Uppdatera resultat.json för nya resultat.</footer>
@@ -166,9 +183,18 @@ function renderMatches(){
 }
 
 function switchTab(tab){
-  document.querySelectorAll("button[data-tab]").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
-  document.getElementById("leaderboardView").classList.toggle("hide", tab !== "leaderboard");
-  document.getElementById("matchesView").classList.toggle("hide", tab !== "matches");
+  document.querySelectorAll("button[data-tab]").forEach(b =>
+    b.classList.toggle("active", b.dataset.tab === tab)
+  );
+
+  document.getElementById("leaderboardView")
+    .classList.toggle("hide", tab !== "leaderboard");
+
+  document.getElementById("matchesView")
+    .classList.toggle("hide", tab !== "matches");
+
+  document.getElementById("newsView")
+    .classList.toggle("hide", tab !== "news");
 }
 
 function loadData(){
