@@ -28,15 +28,11 @@ jobs:
       - name: Hämta VM-nyheter
         continue-on-error: true
         run: python scripts/update_news.py
-      - name: Hämta VM-spelschema
-        run: python scripts/update_matches.py
 
 
-      - name: Testa ESPN scoreboard
-        run: python scripts/test_scoreboard.py
 
       - name: Committa uppdaterat resultat
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Uppdatera resultat och nyheter automatiskt"
-          file_pattern: resultat.json nyheter.json matcher.json
+          file_pattern: resultat.json nyheter.json
