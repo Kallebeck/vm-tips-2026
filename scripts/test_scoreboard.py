@@ -1,6 +1,6 @@
 import requests
 
-URL = "https://www.espn.com/soccer/scoreboard/_/league/fifa.world"
+URL = "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures"
 
 response = requests.get(
     URL,
