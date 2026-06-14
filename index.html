@@ -181,7 +181,34 @@ function renderMatches(){
       </div>
     </div>`).join("");
 }
+function loadNews(){
+  fetch("nyheter.json?v=" + Date.now())
+    .then(r => r.json())
+    .then(news => {
+      const body = document.getElementById("newsBody");
 
+      if (!news || news.length === 0) {
+        body.innerHTML = `<div class="match-card">Inga nyheter hittades.</div>`;
+        return;
+      }
+
+      body.innerHTML = news.map(item => `
+        <a class="match-card" href="${safe(item.url)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block">
+          <div class="match-top">
+            <span>${safe(item.source || "Nyhet")}</span>
+            <span>${safe(item.published || "")}</span>
+          </div>
+          <div style="font-size:18px;font-weight:900">${safe(item.title)}</div>
+          ${item.summary ? `<div style="color:var(--muted);margin-top:8px">${safe(item.summary)}</div>` : ""}
+        </a>
+      `).join("");
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById("newsBody").innerHTML =
+        `<div class="match-card">Kunde inte läsa nyheter.json.</div>`;
+    });
+}
 function switchTab(tab){
   document.querySelectorAll("button[data-tab]").forEach(b =>
     b.classList.toggle("active", b.dataset.tab === tab)
@@ -211,6 +238,7 @@ function loadData(){
       renderPodium();
       fillMatchFilters();
       renderMatches();
+      loadNews();
     })
     .catch(err => {
       console.error(err);
