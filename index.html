@@ -69,11 +69,10 @@
         <div class="card"><span>Spelade matcher</span><b id="played">–</b></div>
       </div>
 
-         <div class="tabs">
-          <button class="active" data-tab="leaderboard">Topplista</button>
-          <button data-tab="matches">Matcher/resultat</button>
-          <button data-tab="news">VM-nyheter</button>
-        </div>
+      <div class="tabs">
+        <button class="active" data-tab="leaderboard">Topplista</button>
+        <button data-tab="matches">Matcher/resultat</button>
+      </div>
     </header>
 
     <main>
@@ -95,32 +94,16 @@
         </section>
       </div>
 
-    <section id="matchesView" class="hide">
-  <div class="section-head">
-    <h2>Matcher/resultat</h2>
-    <div style="display:flex;gap:10px;flex-wrap:wrap">
-      <select id="sectionFilter">
-        <option value="">Alla delar</option>
-      </select>
-
-      <select id="statusFilter">
-        <option value="">Alla</option>
-        <option value="spelad">Spelade</option>
-        <option value="kommande">Kommande</option>
-      </select>
-    </div>
-  </div>
-
-  <div id="matchesBody" class="match-list"></div>
-</section>
-
-<section id="newsView" class="hide">
-  <div class="section-head">
-    <h2>VM-nyheter</h2>
-  </div>
-
-  <div id="newsBody" class="match-list"></div>
-</section>
+      <section id="matchesView" class="hide">
+        <div class="section-head">
+          <h2>Matcher/resultat</h2>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <select id="sectionFilter"><option value="">Alla delar</option></select>
+            <select id="statusFilter"><option value="">Alla</option><option value="spelad">Spelade</option><option value="kommande">Kommande</option></select>
+          </div>
+        </div>
+        <div id="matchesBody" class="match-list"></div>
+      </section>
     </main>
 
     <footer>Byggd som en statisk GitHub Pages-sida. Uppdatera resultat.json för nya resultat.</footer>
@@ -128,7 +111,6 @@
 
 <script>
 let appData = null;
-let matchesData = [];
 
 const medal = (i) => i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : "";
 const safe = (s) => String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
@@ -164,64 +146,29 @@ function renderMatches(){
   const sec = document.getElementById("sectionFilter").value;
   const stat = document.getElementById("statusFilter").value;
   const body = document.getElementById("matchesBody");
-  const matches = matchesData
-    .filter(m => !sec || m.group === sec)
+  const matches = appData.matches
+    .filter(m => !sec || m.section === sec)
     .filter(m => !stat || m.status === stat)
     .sort((a,b) => (a.date || "").localeCompare(b.date || "") || a.match - b.match);
 
   body.innerHTML = matches.map(m => `
     <div class="match-card ${m.status === "kommande" ? "upcoming" : ""}">
       <div class="match-top">
-        <span>Grupp ${safe(m.group)}${m.venue ? " · " + safe(m.venue) : ""}</span>
-        <span>${safe(m.date)} ${safe(m.time || "")} · ${m.status === "spelad" ? "Spelad" : "Kommande"}</span>      </div>
+        <span>${safe(m.section)} · Match ${m.match}</span>
+        <span>${safe(m.date)} · ${m.status === "spelad" ? "Spelad" : "Kommande"}</span>
+      </div>
       <div class="teams">
         <div class="home">${safe(m.home)}</div>
-        <div class="score">${m.score ? safe(m.score) : "–"}</div>
+        <div class="score">${safe(m.score)}</div>
         <div class="away">${safe(m.away)}</div>
       </div>
     </div>`).join("");
 }
-function loadNews(){
-  fetch("nyheter.json?v=" + Date.now())
-    .then(r => r.json())
-    .then(news => {
-      const body = document.getElementById("newsBody");
 
-      if (!news || news.length === 0) {
-        body.innerHTML = `<div class="match-card">Inga nyheter hittades.</div>`;
-        return;
-      }
-
-      body.innerHTML = news.map(item => `
-        <a class="match-card" href="${safe(item.url)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block">
-          <div class="match-top">
-            <span>${safe(item.source || "Nyhet")}</span>
-            <span>${safe(item.published || "")}</span>
-          </div>
-          <div style="font-size:18px;font-weight:900">${safe(item.title)}</div>
-          ${item.summary ? `<div style="color:var(--muted);margin-top:8px">${safe(item.summary)}</div>` : ""}
-        </a>
-      `).join("");
-    })
-    .catch(err => {
-      console.error(err);
-      document.getElementById("newsBody").innerHTML =
-        `<div class="match-card">Kunde inte läsa nyheter.json.</div>`;
-    });
-}
 function switchTab(tab){
-  document.querySelectorAll("button[data-tab]").forEach(b =>
-    b.classList.toggle("active", b.dataset.tab === tab)
-  );
-
-  document.getElementById("leaderboardView")
-    .classList.toggle("hide", tab !== "leaderboard");
-
-  document.getElementById("matchesView")
-    .classList.toggle("hide", tab !== "matches");
-
-  document.getElementById("newsView")
-    .classList.toggle("hide", tab !== "news");
+  document.querySelectorAll("button[data-tab]").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+  document.getElementById("leaderboardView").classList.toggle("hide", tab !== "leaderboard");
+  document.getElementById("matchesView").classList.toggle("hide", tab !== "matches");
 }
 
 function loadData(){
@@ -236,26 +183,14 @@ function loadData(){
       document.getElementById("played").textContent = `${played}/${data.matches.length}`;
       renderLeaderboard();
       renderPodium();
-      loadNews();
-      loadMatches();
-    })
-    .catch(err => {
-      console.error(err);
-    });
-}
-function loadMatches(){
-  return fetch("matcher.json?v=" + Date.now())
-    .then(r => r.json())
-    .then(data => {
-      matchesData = Array.isArray(data) ? data : [];
       fillMatchFilters();
       renderMatches();
     })
     .catch(err => {
       console.error(err);
-      matchesData = [];
     });
 }
+
 loadData();
 
 setInterval(loadData, 60000);
