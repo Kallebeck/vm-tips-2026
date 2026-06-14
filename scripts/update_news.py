@@ -3,27 +3,24 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from email.utils import parsedate_to_datetime
+from urllib.parse import quote_plus
 
 import requests
 
-RSS_URL = "https://www.fotbollskanalen.se/rss/"
+QUERY = "fotbolls vm 2026 OR VM 2026 fotboll"
+RSS_URL = f"https://news.google.com/rss/search?q={quote_plus(QUERY)}&hl=sv&gl=SE&ceid=SE:sv"
 OUTPUT_FILE = "nyheter.json"
-
-KEYWORDS = [
-    "vm",
-    "vm 2026",
-    "fotbolls-vm",
-    "världsmästerskapet",
-    "sverige",
-    "landslaget"
-]
 
 def clean(text):
     text = re.sub(r"<[^>]+>", "", text or "")
     return " ".join(text.split())
 
 def main():
-    response = requests.get(RSS_URL, timeout=30)
+    response = requests.get(
+        RSS_URL,
+        timeout=30,
+        headers={"User-Agent": "Mozilla/5.0"}
+    )
     response.raise_for_status()
 
     root = ET.fromstring(response.content)
@@ -31,16 +28,11 @@ def main():
 
     news = []
 
-    for item in items:
+    for item in items[:10]:
         title = clean(item.findtext("title"))
         link = clean(item.findtext("link"))
         description = clean(item.findtext("description"))
         pub_date_raw = item.findtext("pubDate") or ""
-
-        haystack = f"{title} {description}".lower()
-
-        if not any(k in haystack for k in KEYWORDS):
-            continue
 
         published = ""
         try:
@@ -50,22 +42,19 @@ def main():
 
         news.append({
             "title": title,
-            "source": "Fotbollskanalen",
+            "source": "Google News",
             "published": published,
             "summary": description[:220],
             "url": link
         })
 
-        if len(news) >= 8:
-            break
-
     if not news:
         news = [{
             "title": "Inga VM-nyheter hittades just nu",
-            "source": "Fotbollskanalen",
+            "source": "Google News",
             "published": datetime.now().strftime("%Y-%m-%d %H:%M"),
-            "summary": "Flödet kontrollerades men inga artiklar matchade VM-filter just nu.",
-            "url": "https://www.fotbollskanalen.se/"
+            "summary": "Flödet kontrollerades men inga nyheter hittades just nu.",
+            "url": "https://news.google.com/"
         }]
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
