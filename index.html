@@ -173,11 +173,10 @@ function renderMatches(){
     <div class="match-card ${m.status === "kommande" ? "upcoming" : ""}">
       <div class="match-top">
         <span>Grupp ${safe(m.group)}${m.venue ? " · " + safe(m.venue) : ""}</span>
-        <span>${safe(m.date)} ${safe(m.time || "")} · ${m.status === "spelad" ? "Spelad" : "Kommande"}</span>
-      </div>
+        <span>${safe(m.date)} ${safe(m.time || "")} · ${m.status === "spelad" ? "Spelad" : "Kommande"}</span>      </div>
       <div class="teams">
         <div class="home">${safe(m.home)}</div>
-        <div class="score">${safe(m.score)}</div>
+        <div class="score">${m.score ? safe(m.score) : "–"}</div>
         <div class="away">${safe(m.away)}</div>
       </div>
     </div>`).join("");
