@@ -25,9 +25,11 @@ jobs:
         env:
           EXCEL_SHARE_URL: "https://1drv.ms/x/c/b7d375ff935e0d7e/IQC-Mo6MGlMPTY52UX6LcnloAaD4KGZnjlnrbFO3nHtQNlM?e=4PeH32"
         run: python scripts/update_results.py
+      - name: Hämta VM-nyheter
+        run: python scripts/update_news.py
 
       - name: Committa uppdaterat resultat
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Uppdatera resultat.json automatiskt"
-          file_pattern: resultat.json
+          commit_message: "Uppdatera resultat och nyheter automatiskt"
+          file_pattern: resultat.json nyheter.json
