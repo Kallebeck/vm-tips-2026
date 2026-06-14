@@ -128,6 +128,7 @@
 
 <script>
 let appData = null;
+let matchesData = [];
 
 const medal = (i) => i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : "";
 const safe = (s) => String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
@@ -163,16 +164,16 @@ function renderMatches(){
   const sec = document.getElementById("sectionFilter").value;
   const stat = document.getElementById("statusFilter").value;
   const body = document.getElementById("matchesBody");
-  const matches = appData.matches
-    .filter(m => !sec || m.section === sec)
+  const matches = matchesData
+    .filter(m => !sec || m.group === sec)
     .filter(m => !stat || m.status === stat)
     .sort((a,b) => (a.date || "").localeCompare(b.date || "") || a.match - b.match);
 
   body.innerHTML = matches.map(m => `
     <div class="match-card ${m.status === "kommande" ? "upcoming" : ""}">
       <div class="match-top">
-        <span>${safe(m.section)} · Match ${m.match}</span>
-        <span>${safe(m.date)} · ${m.status === "spelad" ? "Spelad" : "Kommande"}</span>
+        <span>Grupp ${safe(m.group)}${m.venue ? " · " + safe(m.venue) : ""}</span>
+        <span>${safe(m.date)} ${safe(m.time || "")} · ${m.status === "spelad" ? "Spelad" : "Kommande"}</span>
       </div>
       <div class="teams">
         <div class="home">${safe(m.home)}</div>
@@ -236,15 +237,26 @@ function loadData(){
       document.getElementById("played").textContent = `${played}/${data.matches.length}`;
       renderLeaderboard();
       renderPodium();
-      fillMatchFilters();
-      renderMatches();
       loadNews();
+      loadMatches();
     })
     .catch(err => {
       console.error(err);
     });
 }
-
+function loadMatches(){
+  return fetch("matcher.json?v=" + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      matchesData = Array.isArray(data) ? data : [];
+      fillMatchFilters();
+      renderMatches();
+    })
+    .catch(err => {
+      console.error(err);
+      matchesData = [];
+    });
+}
 loadData();
 
 setInterval(loadData, 60000);
