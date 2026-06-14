@@ -105,8 +105,17 @@
         </div>
         <div id="matchesBody" class="match-list"></div>
       </section>
+          
+      <section id="newsView" class="hide">
+        <div class="section-head">
+          <h2>VM-nyheter</h2>
+          </div>
+        <div id="newsBody" class="match-list"></div>
+      </section>
     </main>
 
+
+    
     <footer>Byggd som en statisk GitHub Pages-sida. Uppdatera resultat.json för nya resultat.</footer>
   </div>
 
@@ -170,6 +179,7 @@ function switchTab(tab){
   document.querySelectorAll("button[data-tab]").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
   document.getElementById("leaderboardView").classList.toggle("hide", tab !== "leaderboard");
   document.getElementById("matchesView").classList.toggle("hide", tab !== "matches");
+  document.getElementById("newsView").classList.toggle("hide", tab !== "news");
 }
 
 function loadData(){
