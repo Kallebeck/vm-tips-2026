@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15 07:14",
+  "updated": "2026-06-15 18:31",
   "leaderboard": [
     {
       "position": 1,
@@ -100,7 +100,7 @@
     {
       "position": 17,
       "name": "Oskar Amund",
-      "paid": false,
+      "paid": true,
       "points": 32
     },
     {
@@ -148,7 +148,7 @@
     {
       "position": 25,
       "name": "Fredrik Hansson",
-      "paid": false,
+      "paid": true,
       "points": 28
     },
     {
