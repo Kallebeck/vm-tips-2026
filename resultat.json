@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17 08:53",
+  "updated": "2026-06-17 15:04",
   "leaderboard": [
     {
       "position": 1,
@@ -118,7 +118,7 @@
     {
       "position": 20,
       "name": "Stefan Setterlund",
-      "paid": false,
+      "paid": true,
       "points": 52
     },
     {
