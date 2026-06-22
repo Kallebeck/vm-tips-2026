@@ -1,215 +1,215 @@
 {
-  "updated": "2026-06-22 21:00",
+  "updated": "2026-06-23 01:53",
   "leaderboard": [
     {
       "position": 1,
       "name": "Lee Brustad",
       "paid": true,
-      "points": 149
+      "points": 154
     },
     {
       "position": 2,
       "name": "Lars Ljungblom",
       "paid": true,
-      "points": 133
+      "points": 138
     },
     {
       "position": 3,
-      "name": "Patrik Hermez",
+      "name": "Marcus Nilsson",
       "paid": true,
-      "points": 128
+      "points": 134
     },
     {
       "position": 4,
-      "name": "Marcus Nilsson",
+      "name": "Fredric Kallebäck",
       "paid": true,
-      "points": 127
+      "points": 132
     },
     {
       "position": 5,
-      "name": "Fredric Kallebäck",
+      "name": "Patrik Hermez",
       "paid": true,
-      "points": 127
+      "points": 130
     },
     {
       "position": 6,
       "name": "Andreas Hafvenström",
       "paid": true,
-      "points": 125
+      "points": 128
     },
     {
       "position": 7,
-      "name": "Christian Wallengren",
+      "name": "Fredrik Olsson",
       "paid": true,
-      "points": 123
+      "points": 127
     },
     {
       "position": 8,
-      "name": "Fredrik Olsson",
+      "name": "Christian Wallengren",
       "paid": true,
-      "points": 122
+      "points": 126
     },
     {
       "position": 9,
       "name": "Anders Eliasson",
       "paid": false,
-      "points": 121
+      "points": 126
     },
     {
       "position": 10,
       "name": "Tim Håkman",
       "paid": false,
-      "points": 120
+      "points": 123
     },
     {
       "position": 11,
-      "name": "Pontus Thorsen",
-      "paid": true,
-      "points": 119
+      "name": "Albin Löfborg",
+      "paid": false,
+      "points": 123
     },
     {
       "position": 12,
-      "name": "Albin Löfborg",
-      "paid": false,
-      "points": 118
+      "name": "Pontus Thorsen",
+      "paid": true,
+      "points": 122
     },
     {
       "position": 13,
+      "name": "Jenny Nordgren",
+      "paid": true,
+      "points": 121
+    },
+    {
+      "position": 14,
+      "name": "Mikael Bergqvist",
+      "paid": false,
+      "points": 120
+    },
+    {
+      "position": 15,
+      "name": "Jakob Horn",
+      "paid": true,
+      "points": 120
+    },
+    {
+      "position": 16,
+      "name": "Aleksandra Stojcevska",
+      "paid": false,
+      "points": 119
+    },
+    {
+      "position": 17,
       "name": "Per Nilsson",
       "paid": false,
       "points": 118
     },
     {
-      "position": 14,
+      "position": 18,
+      "name": "Oskar Amund",
+      "paid": true,
+      "points": 118
+    },
+    {
+      "position": 19,
       "name": "Christoffer Stamgren",
       "paid": true,
       "points": 117
     },
     {
-      "position": 15,
-      "name": "Jenny Nordgren",
-      "paid": true,
-      "points": 116
-    },
-    {
-      "position": 16,
-      "name": "Oskar Amund",
-      "paid": true,
-      "points": 116
-    },
-    {
-      "position": 17,
-      "name": "Mikael Bergqvist",
-      "paid": false,
-      "points": 115
-    },
-    {
-      "position": 18,
-      "name": "Aleksandra Stojcevska",
-      "paid": false,
-      "points": 114
-    },
-    {
-      "position": 19,
-      "name": "Jakob Horn",
-      "paid": true,
-      "points": 113
-    },
-    {
       "position": 20,
       "name": "Petri Valo",
       "paid": true,
-      "points": 113
+      "points": 115
     },
     {
       "position": 21,
       "name": "Maria Löfvenholm",
       "paid": true,
-      "points": 110
+      "points": 115
     },
     {
       "position": 22,
       "name": "Fredrik Hansson",
       "paid": true,
-      "points": 110
+      "points": 115
     },
     {
       "position": 23,
       "name": "Håkan Hansson",
       "paid": false,
-      "points": 110
+      "points": 113
     },
     {
       "position": 24,
-      "name": "Andreas Astlund",
-      "paid": true,
-      "points": 109
+      "name": "Maziyar Fatemi",
+      "paid": false,
+      "points": 113
     },
     {
       "position": 25,
-      "name": "Maziyar Fatemi",
-      "paid": false,
-      "points": 108
+      "name": "Andreas Astlund",
+      "paid": true,
+      "points": 111
     },
     {
       "position": 26,
-      "name": "Anna Berglind",
-      "paid": false,
-      "points": 107
+      "name": "Carolina Broddéus",
+      "paid": true,
+      "points": 111
     },
     {
       "position": 27,
       "name": "Stefan Setterlund",
       "paid": true,
-      "points": 107
+      "points": 109
     },
     {
       "position": 28,
-      "name": "Carolina Broddéus",
+      "name": "Mari Leion",
+      "paid": true,
+      "points": 109
+    },
+    {
+      "position": 29,
+      "name": "Anna Berglind",
+      "paid": false,
+      "points": 107
+    },
+    {
+      "position": 30,
+      "name": "Stefan Lindberg",
+      "paid": true,
+      "points": 107
+    },
+    {
+      "position": 31,
+      "name": "Victor Gustavsson",
       "paid": true,
       "points": 106
     },
     {
-      "position": 29,
-      "name": "Stefan Lindberg",
-      "paid": true,
-      "points": 102
-    },
-    {
-      "position": 30,
-      "name": "Mari Leion",
-      "paid": true,
-      "points": 102
-    },
-    {
-      "position": 31,
+      "position": 32,
       "name": "Jon Jonsson",
       "paid": true,
       "points": 102
     },
     {
-      "position": 32,
-      "name": "Victor Gustavsson",
-      "paid": true,
-      "points": 101
-    },
-    {
       "position": 33,
       "name": "Shanna Salehi",
       "paid": true,
-      "points": 97
+      "points": 99
     },
     {
       "position": 34,
       "name": "Marcus Andersson",
       "paid": false,
-      "points": 96
+      "points": 99
     },
     {
       "position": 35,
       "name": "Ditte Clemons",
       "paid": true,
-      "points": 85
+      "points": 88
     }
   ],
   "matches": [
@@ -835,10 +835,10 @@
       "date": "2026-06-22",
       "home": "Argentina",
       "away": "Österrike",
-      "homeGoals": null,
-      "awayGoals": null,
-      "score": "–",
-      "status": "kommande"
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "score": "2–0",
+      "status": "spelad"
     },
     {
       "section": "Grupp J",
