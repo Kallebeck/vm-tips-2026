@@ -4,56 +4,221 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VM-tipset 2026</title>
+
   <style>
     :root{
-      --bg:#07111f; --panel:#101d31; --panel2:#0d1728; --text:#eef5ff; --muted:#9fb0c7;
-      --line:rgba(255,255,255,.10); --gold:#ffd166; --blue:#5cc8ff; --green:#8cffc1; --red:#ff9b9b;
+      --bg:#07111f; --panel:#101d31; --text:#eef5ff; --muted:#9fb0c7;
+      --line:rgba(255,255,255,.10); --gold:#ffd166; --blue:#5cc8ff;
     }
+
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:
-      radial-gradient(circle at top left, rgba(92,200,255,.22), transparent 35%),
-      radial-gradient(circle at top right, rgba(255,209,102,.18), transparent 28%),
-      var(--bg);color:var(--text)}
+
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(92,200,255,.22), transparent 35%),
+        radial-gradient(circle at top right, rgba(255,209,102,.18), transparent 28%),
+        var(--bg);
+      color:var(--text);
+    }
+
     .wrap{max-width:1120px;margin:0 auto;padding:24px}
     header{padding:26px 0 18px}
     .hero{display:flex;gap:18px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap}
     h1{margin:0;font-size:clamp(32px,5vw,56px);letter-spacing:-.04em}
     .sub{color:var(--muted);margin-top:8px}
-    .cards{  display:grid;  grid-template-columns:repeat(4,minmax(0,1fr));  gap:12px;margin:18px 0;}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.045));border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 18px 45px rgba(0,0,0,.18)}
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:12px;
+      margin:18px 0;
+    }
+
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.045));
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:0 18px 45px rgba(0,0,0,.18);
+    }
+
     .card b{display:block;font-size:28px;margin-top:4px}
     .card span{color:var(--muted);font-size:13px}
+
     .tabs{display:flex;gap:10px;margin:18px 0;flex-wrap:wrap}
-    button{border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--text);padding:11px 14px;border-radius:999px;cursor:pointer;font-weight:700}
-    button.active{background:var(--gold);color:#1c1300;border-color:transparent}
-    .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;align-items:start}
-    section{background:rgba(16,29,49,.82);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 22px 60px rgba(0,0,0,.25)}
-    .section-head{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line);gap:12px}
+
+    button{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      padding:11px 14px;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:700;
+    }
+
+    button.active{
+      background:var(--gold);
+      color:#1c1300;
+      border-color:transparent;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:18px;
+      align-items:start;
+    }
+
+    section{
+      background:rgba(16,29,49,.82);
+      border:1px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      box-shadow:0 22px 60px rgba(0,0,0,.25);
+    }
+
+    .section-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:16px 18px;
+      border-bottom:1px solid var(--line);
+      gap:12px;
+    }
+
     h2{margin:0;font-size:18px}
-    input,select{background:rgba(255,255,255,.08);border:1px solid var(--line);color:var(--text);padding:10px 12px;border-radius:12px;outline:none}
+
+    input,select{
+      background:rgba(255,255,255,.08);
+      border:1px solid var(--line);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:12px;
+      outline:none;
+    }
+
     select option{background:#101d31;color:white}
+
     table{width:100%;border-collapse:collapse}
     th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left}
     th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
     tr:hover td{background:rgba(255,255,255,.035)}
+
     .pos{font-weight:900;width:86px}
     .points{font-weight:900;text-align:right;font-size:18px}
-    .pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:5px 9px;background:rgba(255,255,255,.08);font-size:12px;color:var(--muted)}
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      border-radius:999px;
+      padding:5px 9px;
+      background:rgba(255,255,255,.08);
+      font-size:12px;
+      color:var(--muted);
+    }
+
     .medal{font-size:20px}
     .match-list{display:grid;gap:10px;padding:14px}
-    .match-card{background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:16px;padding:12px}
-    .match-top{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:10px}
-    .teams{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center}
-    .home{text-align:right}.away{text-align:left}
-    .score{font-size:22px;font-weight:900;background:rgba(255,209,102,.16);color:var(--gold);padding:7px 10px;border-radius:12px;min-width:58px;text-align:center}
-    .upcoming .score{color:var(--muted);background:rgba(255,255,255,.07)}
+
+    .match-card{
+      background:rgba(255,255,255,.055);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:12px;
+    }
+
+    .match-top{
+      display:flex;
+      justify-content:space-between;
+      color:var(--muted);
+      font-size:12px;
+      margin-bottom:10px;
+    }
+
+    .teams{
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      gap:10px;
+      align-items:center;
+    }
+
+    .home{text-align:right}
+    .away{text-align:left}
+
+    .score{
+      font-size:22px;
+      font-weight:900;
+      background:rgba(255,209,102,.16);
+      color:var(--gold);
+      padding:7px 10px;
+      border-radius:12px;
+      min-width:58px;
+      text-align:center;
+    }
+
+    .upcoming .score{
+      color:var(--muted);
+      background:rgba(255,255,255,.07);
+    }
+
     .hide{display:none}
-    footer{color:var(--muted);font-size:12px;text-align:center;padding:28px 0}
-    @media(max-width:850px){.grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.section-head{flex-direction:column;align-items:stretch}.wrap{padding:16px}}
+
+    .conspiracy-card{
+      background:linear-gradient(135deg,#1f1f1f,#3a2b00);
+      color:#fff;
+      border:2px solid #d4af37;
+      box-shadow:0 0 20px rgba(212,175,55,.35);
+    }
+
+    .conspiracy-card h2{
+      color:#ffd700;
+      text-align:center;
+      font-size:28px;
+    }
+
+    .conspiracy-card h3{
+      color:#ffdd57;
+      margin-top:22px;
+    }
+
+    .conspiracy-card .quote{
+      margin-top:24px;
+      font-style:italic;
+      font-size:1.2rem;
+      text-align:center;
+      color:#ffd700;
+    }
+
+    .warning{
+      text-align:center;
+      color:#ff6b6b;
+      font-weight:900;
+      margin-bottom:16px;
+    }
+
+    footer{
+      color:var(--muted);
+      font-size:12px;
+      text-align:center;
+      padding:28px 0;
+    }
+
+    @media(max-width:850px){
+      .grid{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .section-head{flex-direction:column;align-items:stretch}
+      .wrap{padding:16px}
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
+
     <header>
       <div class="hero">
         <div>
@@ -64,66 +229,53 @@
       </div>
 
       <div class="cards">
-  <div class="card">
-    <span>Ledare</span>
-    <b id="leader">–</b>
-  </div>
+        <div class="card">
+          <span>Ledare</span>
+          <b id="leader">–</b>
+        </div>
 
-  <div class="card">
-    <span>Deltagare</span>
-    <b id="count">–</b>
-  </div>
+        <div class="card">
+          <span>Deltagare</span>
+          <b id="count">–</b>
+        </div>
 
-  <div class="card">
-    <span>Spelade matcher</span>
-    <b id="played">–</b>
-  </div>
+        <div class="card">
+          <span>Spelade matcher</span>
+          <b id="played">–</b>
+        </div>
 
-<div class="card" style="
-  background:linear-gradient(
-    135deg,
-    rgba(0,87,183,.35),
-    rgba(255,205,0,.22)
-  );
-  border:1px solid rgba(255,205,0,.30);
-">
+        <div class="card" style="background:linear-gradient(135deg,rgba(0,87,183,.35),rgba(255,205,0,.22));border:1px solid rgba(255,205,0,.30);">
+          <span style="color:#5cc8ff;font-weight:700;text-shadow:0 0 8px rgba(92,200,255,.4);">
+            🇸🇪⚽ Sveriges VM-matcher
+          </span>
 
-<span style="
-  color:#5cc8ff;
-  font-weight:700;
-  text-shadow:0 0 8px rgba(92,200,255,.4);
-">
-  🇸🇪⚽ Sveriges VM-matcher
-</span>
+          <div style="font-size:14px;margin-top:10px;line-height:1.7">
+            📺 SVT • 15/6 04:00<br>
+            🇸🇪 Sverige vs 🇹🇳 Tunisien 5 - 1
 
-    <div style="font-size:14px;margin-top:10px;line-height:1.7">
+            <hr style="border-color:rgba(255,255,255,.15)">
 
-      📺 SVT • 15/6 04:00<br>
-      🇸🇪 Sverige vs 🇹🇳 Tunisien  5 - 1
+            📺 TV4 Play • 20/6 19:00<br>
+            🇳🇱 Nederländerna vs 🇸🇪 Sverige 5 - 1
 
-      <hr style="border-color:rgba(255,255,255,.15)">
+            <hr style="border-color:rgba(255,255,255,.15)">
 
-      📺 TV4 Play • 20/6 19:00<br>
-      🇳🇱 Nederländerna vs 🇸🇪 Sverige  5 - 1
-
-      <hr style="border-color:rgba(255,255,255,.15)">
-
-      📺 SVT •  26/6 01:00<br>
-      🇯🇵 Japan vs 🇸🇪 Sverige
-
-    </div>
-  </div>
-</div>
+            📺 SVT • 26/6 01:00<br>
+            🇯🇵 Japan vs 🇸🇪 Sverige
+          </div>
+        </div>
+      </div>
 
       <div class="tabs">
         <button class="active" data-tab="leaderboard">Topplista</button>
         <button data-tab="matches">Matcher/resultat</button>
         <button data-tab="news">VM-nyheter</button>
-        
+        <button data-tab="konspiration">🕵️ Konspirationsteori 17</button>
       </div>
     </header>
 
     <main>
+
       <div id="leaderboardView" class="grid">
         <section>
           <div class="section-head">
@@ -131,13 +283,22 @@
             <input id="search" type="search" placeholder="Sök deltagare..." />
           </div>
           <table>
-            <thead><tr><th>Plats</th><th>Namn</th><th style="text-align:right">Poäng</th></tr></thead>
+            <thead>
+              <tr>
+                <th>Plats</th>
+                <th>Namn</th>
+                <th style="text-align:right">Poäng</th>
+              </tr>
+            </thead>
             <tbody id="leaderboardBody"></tbody>
           </table>
         </section>
 
         <section>
-          <div class="section-head"><h2>Podium</h2><span class="pill">Topp 3</span></div>
+          <div class="section-head">
+            <h2>Podium</h2>
+            <span class="pill">Topp 3</span>
+          </div>
           <div id="podium" style="padding:14px;display:grid;gap:10px"></div>
         </section>
       </div>
@@ -146,149 +307,254 @@
         <div class="section-head">
           <h2>Matcher/resultat</h2>
           <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <select id="sectionFilter"><option value="">Alla delar</option></select>
-            <select id="statusFilter"><option value="">Alla</option><option value="spelad">Spelade</option><option value="kommande">Kommande</option></select>
+            <select id="sectionFilter">
+              <option value="">Alla delar</option>
+            </select>
+            <select id="statusFilter">
+              <option value="">Alla</option>
+              <option value="spelad">Spelade</option>
+              <option value="kommande">Kommande</option>
+            </select>
           </div>
         </div>
         <div id="matchesBody" class="match-list"></div>
       </section>
-          
+
       <section id="newsView" class="hide">
         <div class="section-head">
           <h2>VM-nyheter</h2>
-          </div>
+        </div>
         <div id="newsBody" class="match-list"></div>
       </section>
+
+      <section id="konspiration" class="hide">
+        <div class="card conspiracy-card">
+          <div class="warning">
+            ⚠️ Dokumentet är inte granskat av FIFA, UEFA eller verkligheten ⚠️
+          </div>
+
+          <h2>🚨 KONSPIRATIONSTEORI 17 🚨</h2>
+          <h3>Operation VM-Kryss 2026</h3>
+
+          <p>
+            Efter flera dagars granskning av VM-kryssets märkliga händelser har en oberoende kommission
+            presenterat sina preliminära fynd.
+          </p>
+
+          <h3>Vad vet vi?</h3>
+          <p>Lee Brustad leder VM-krysset med närmast orimlig precision.</p>
+          <p>England–Ghana 0-0 träffades trots att ingen normal människa trodde på det.</p>
+          <p>Flera deltagare har rapporterat misstänkta kopplingar mellan Lee, FIFA, andevärlden och Chalmers.</p>
+
+          <h3>Bevismaterial</h3>
+          <p><strong>Bevis A:</strong> Lee har vid upprepade tillfällen korrekt förutspått resultat som enligt statistiska modeller borde vara omöjliga.</p>
+          <p><strong>Bevis B:</strong> Enligt Stefan känner Lees kusins rumskompis på Chalmers personen som inte VAR-granskade Ghanas uteblivna straff.</p>
+          <p><strong>Bevis C:</strong> Mari har identifierat släktband bakåt till den legendariska spådamen "Mormor Saida".</p>
+          <p><strong>Bevis D:</strong> När JSON-filen slutade uppdatera var Lee redan etta. Sammanträffande?</p>
+
+          <h3>Läckta uppgifter</h3>
+          <p>En källa nära FIFA uppger att ett hemligt möte ägde rum i Trädgårdsföreningen i Göteborg.</p>
+
+          <p><strong>Närvarande:</strong></p>
+          <ul>
+            <li>Lee Brustad</li>
+            <li>Gianni Infantino</li>
+            <li>Donald Trump</li>
+            <li>En okänd person med titeln "VM-direktör"</li>
+          </ul>
+
+          <p><strong>På bordet låg enligt vittnen:</strong></p>
+          <ul>
+            <li>📄 Operation Gruppspel</li>
+            <li>📄 England-Ghana 0-0</li>
+            <li>📄 Hur vi får Fredric Kallebäck att fastna på plats 8</li>
+            <li>📄 Konspirationsteori 4: Arsenal vinner Premier League</li>
+          </ul>
+
+          <p>Den sista punkten avfärdades dock omedelbart som för osannolik.</p>
+
+          <h3>Slutsats</h3>
+          <p>Kommissionen bedömer att Lee sannolikt har tillgång till minst två av följande:</p>
+
+          <ul>
+            <li>☑ FIFA:s interna prognossystem</li>
+            <li>☑ AI från framtiden</li>
+            <li>☑ Andevärlden</li>
+            <li>☑ VAR-rummet</li>
+            <li>☑ En tidsmaskin</li>
+          </ul>
+
+          <h3>Rekommendation</h3>
+          <p>För att säkerställa rättvis konkurrens rekommenderas att Lee inför slutspelet:</p>
+
+          <ul>
+            <li>övervakas av Fredrik Olssons kansli</li>
+          </ul>
+
+          <p>
+            Tills vidare kvarstår dock Lee "Saida" Brustad som huvudmisstänkt i den växande
+            FIFA/VM-kryss-konspirationen. 🕵️‍♂️⚽🏆
+          </p>
+
+          <p class="quote">
+            "Det är förmodligen INTE fotbollskunskap utan bara ren tur. Men vi tänker fortsätta utreda."
+          </p>
+        </div>
+      </section>
+
     </main>
 
-
-    
-    <footer>Byggd som en statisk GitHub Pages-sida. Uppdatera resultat.json för nya resultat.</footer>
+    <footer>
+      Byggd som en statisk GitHub Pages-sida. Uppdatera resultat.json för nya resultat.
+    </footer>
   </div>
 
-<script>
-let appData = null;
+  <script>
+    let appData = null;
 
-const medal = (i) => i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : "";
-const safe = (s) => String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+    const medal = (i) => i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : "";
+    const safe = (s) => String(s ?? "").replace(/[&<>"']/g, m => ({
+      '&':'&amp;',
+      '<':'&lt;',
+      '>':'&gt;',
+      '"':'&quot;',
+      "'":'&#039;'
+    }[m]));
 
-function renderLeaderboard(){
-  const q = document.getElementById("search").value.toLowerCase().trim();
-  const body = document.getElementById("leaderboardBody");
-  const rows = appData.leaderboard.filter(r => r.name.toLowerCase().includes(q));
-  body.innerHTML = rows.map((r, idx) => `
-    <tr>
-      <td class="pos"><span class="medal">${medal(r.position-1)}</span> ${r.position}</td>
-      <td>${safe(r.name)}${r.paid ? ' 💰' : ''}</td>
-      <td class="points">${r.points} p</td>
-    </tr>`).join("");
-}
+    function renderLeaderboard(){
+      const q = document.getElementById("search").value.toLowerCase().trim();
+      const body = document.getElementById("leaderboardBody");
+      const rows = appData.leaderboard.filter(r => r.name.toLowerCase().includes(q));
 
-function renderPodium(){
-  const podium = document.getElementById("podium");
-  podium.innerHTML = appData.leaderboard.slice(0,3).map((r,i)=>`
-    <div class="match-card">
-      <div class="match-top"><b>${medal(i)} Plats ${r.position}</b><span>${r.points} p</span></div>
-     <div style="font-size:20px;font-weight:900">${safe(r.name)}${r.paid ? ' 💰' : ''}</div>
-    </div>`).join("");
-}
-
-function fillMatchFilters(){
-  const select = document.getElementById("sectionFilter");
-  const sections = [...new Set(appData.matches.map(m => m.section).filter(Boolean))];
-  select.innerHTML = '<option value="">Alla delar</option>' + sections.map(s => `<option value="${safe(s)}">${safe(s)}</option>`).join("");
-}
-
-function renderMatches(){
-  const sec = document.getElementById("sectionFilter").value;
-  const stat = document.getElementById("statusFilter").value;
-  const body = document.getElementById("matchesBody");
-  const matches = appData.matches
-    .filter(m => !sec || m.section === sec)
-    .filter(m => !stat || m.status === stat)
-    .sort((a,b) => (a.date || "").localeCompare(b.date || "") || a.match - b.match);
-
-  body.innerHTML = matches.map(m => `
-    <div class="match-card ${m.status === "kommande" ? "upcoming" : ""}">
-      <div class="match-top">
-        <span>${safe(m.section)} · Match ${m.match}</span>
-        <span>${safe(m.date)} · ${m.status === "spelad" ? "Spelad" : "Kommande"}</span>
-      </div>
-      <div class="teams">
-        <div class="home">${safe(m.home)}</div>
-        <div class="score">${safe(m.score)}</div>
-        <div class="away">${safe(m.away)}</div>
-      </div>
-    </div>`).join("");
-}
-
-function loadNews(){
-  fetch("nyheter.json?v=" + Date.now())
-    .then(r => r.json())
-    .then(news => {
-      const body = document.getElementById("newsBody");
-
-      if (!news || news.length === 0) {
-        body.innerHTML = `<div class="match-card">Inga nyheter hittades.</div>`;
-        return;
-      }
-
-      body.innerHTML = news.map(item => `
-        <a class="match-card" href="${safe(item.url)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block">
-          <div class="match-top">
-            <span>${safe(item.source || "Nyhet")}</span>
-            <span>${safe(item.published || "")}</span>
-          </div>
-          <div style="font-size:18px;font-weight:900">${safe(item.title)}</div>
-          ${item.summary ? `<div style="color:var(--muted);margin-top:8px">${safe(item.summary)}</div>` : ""}
-        </a>
+      body.innerHTML = rows.map(r => `
+        <tr>
+          <td class="pos"><span class="medal">${medal(r.position - 1)}</span> ${r.position}</td>
+          <td>${safe(r.name)}${r.paid ? ' 💰' : ''}</td>
+          <td class="points">${r.points} p</td>
+        </tr>
       `).join("");
-    })
-    .catch(err => {
-      console.error(err);
-      document.getElementById("newsBody").innerHTML =
-        `<div class="match-card">Kunde inte läsa nyheter.json.</div>`;
-    });
-}
-  
-function switchTab(tab){
-  document.querySelectorAll("button[data-tab]").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
-  document.getElementById("leaderboardView").classList.toggle("hide", tab !== "leaderboard");
-  document.getElementById("matchesView").classList.toggle("hide", tab !== "matches");
-  document.getElementById("newsView").classList.toggle("hide", tab !== "news");
-}
+    }
 
-function loadData(){
-  fetch("resultat.json?v=" + Date.now())
-    .then(r => r.json())
-    .then(data => {
-      appData = data;
-      document.getElementById("updated").textContent = data.updated || "–";
-      document.getElementById("leader").textContent = data.leaderboard?.[0]?.name || "–";
-      document.getElementById("count").textContent = data.leaderboard?.length || "–";
-      const played = data.matches.filter(m => m.status === "spelad").length;
-      document.getElementById("played").textContent = `${played}/${data.matches.length}`;
-      renderLeaderboard();
-      renderPodium();
-      fillMatchFilters();
-      renderMatches();
-      loadNews();
-    })
-    .catch(err => {
-      console.error(err);
-    });
-}
+    function renderPodium(){
+      const podium = document.getElementById("podium");
 
-loadData();
+      podium.innerHTML = appData.leaderboard.slice(0,3).map((r,i) => `
+        <div class="match-card">
+          <div class="match-top">
+            <b>${medal(i)} Plats ${r.position}</b>
+            <span>${r.points} p</span>
+          </div>
+          <div style="font-size:20px;font-weight:900">${safe(r.name)}${r.paid ? ' 💰' : ''}</div>
+        </div>
+      `).join("");
+    }
 
-setInterval(loadData, 60000);
+    function fillMatchFilters(){
+      const select = document.getElementById("sectionFilter");
+      const sections = [...new Set(appData.matches.map(m => m.section).filter(Boolean))];
 
-document.getElementById("search").addEventListener("input", renderLeaderboard);
-document.getElementById("sectionFilter").addEventListener("change", renderMatches);
-document.getElementById("statusFilter").addEventListener("change", renderMatches);
-document.querySelectorAll("button[data-tab]").forEach(b => b.addEventListener("click", () => switchTab(b.dataset.tab)));
-</script>
+      select.innerHTML =
+        '<option value="">Alla delar</option>' +
+        sections.map(s => `<option value="${safe(s)}">${safe(s)}</option>`).join("");
+    }
+
+    function renderMatches(){
+      const sec = document.getElementById("sectionFilter").value;
+      const stat = document.getElementById("statusFilter").value;
+      const body = document.getElementById("matchesBody");
+
+      const matches = appData.matches
+        .filter(m => !sec || m.section === sec)
+        .filter(m => !stat || m.status === stat)
+        .sort((a,b) => (a.date || "").localeCompare(b.date || "") || a.match - b.match);
+
+      body.innerHTML = matches.map(m => `
+        <div class="match-card ${m.status === "kommande" ? "upcoming" : ""}">
+          <div class="match-top">
+            <span>${safe(m.section)} · Match ${m.match}</span>
+            <span>${safe(m.date)} · ${m.status === "spelad" ? "Spelad" : "Kommande"}</span>
+          </div>
+          <div class="teams">
+            <div class="home">${safe(m.home)}</div>
+            <div class="score">${safe(m.score)}</div>
+            <div class="away">${safe(m.away)}</div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function loadNews(){
+      fetch("nyheter.json?v=" + Date.now())
+        .then(r => r.json())
+        .then(news => {
+          const body = document.getElementById("newsBody");
+
+          if (!news || news.length === 0) {
+            body.innerHTML = `<div class="match-card">Inga nyheter hittades.</div>`;
+            return;
+          }
+
+          body.innerHTML = news.map(item => `
+            <a class="match-card" href="${safe(item.url)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block">
+              <div class="match-top">
+                <span>${safe(item.source || "Nyhet")}</span>
+                <span>${safe(item.published || "")}</span>
+              </div>
+              <div style="font-size:18px;font-weight:900">${safe(item.title)}</div>
+              ${item.summary ? `<div style="color:var(--muted);margin-top:8px">${safe(item.summary)}</div>` : ""}
+            </a>
+          `).join("");
+        })
+        .catch(err => {
+          console.error(err);
+          document.getElementById("newsBody").innerHTML =
+            `<div class="match-card">Kunde inte läsa nyheter.json.</div>`;
+        });
+    }
+
+    function switchTab(tab){
+      document.querySelectorAll("button[data-tab]")
+        .forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+
+      document.getElementById("leaderboardView").classList.toggle("hide", tab !== "leaderboard");
+      document.getElementById("matchesView").classList.toggle("hide", tab !== "matches");
+      document.getElementById("newsView").classList.toggle("hide", tab !== "news");
+      document.getElementById("konspiration").classList.toggle("hide", tab !== "konspiration");
+    }
+
+    function loadData(){
+      fetch("resultat.json?v=" + Date.now())
+        .then(r => r.json())
+        .then(data => {
+          appData = data;
+
+          document.getElementById("updated").textContent = data.updated || "–";
+          document.getElementById("leader").textContent = data.leaderboard?.[0]?.name || "–";
+          document.getElementById("count").textContent = data.leaderboard?.length || "–";
+
+          const played = data.matches.filter(m => m.status === "spelad").length;
+          document.getElementById("played").textContent = `${played}/${data.matches.length}`;
+
+          renderLeaderboard();
+          renderPodium();
+          fillMatchFilters();
+          renderMatches();
+          loadNews();
+        })
+        .catch(err => {
+          console.error(err);
+        });
+    }
+
+    loadData();
+    setInterval(loadData, 60000);
+
+    document.getElementById("search").addEventListener("input", renderLeaderboard);
+    document.getElementById("sectionFilter").addEventListener("change", renderMatches);
+    document.getElementById("statusFilter").addEventListener("change", renderMatches);
+
+    document.querySelectorAll("button[data-tab]")
+      .forEach(b => b.addEventListener("click", () => switchTab(b.dataset.tab)));
+  </script>
 </body>
 </html>
-
-
