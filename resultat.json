@@ -1,215 +1,215 @@
 {
-  "updated": "2026-06-26 07:42",
+  "updated": "2026-06-26 08:09",
   "leaderboard": [
     {
       "position": 1,
       "name": "Lee Brustad",
       "paid": true,
-      "points": 201
+      "points": 215
     },
     {
       "position": 2,
       "name": "Marcus Nilsson",
       "paid": true,
-      "points": 182
+      "points": 194
     },
     {
       "position": 3,
-      "name": "Lars Ljungblom",
-      "paid": true,
-      "points": 177
+      "name": "Albin Löfborg",
+      "paid": false,
+      "points": 190
     },
     {
       "position": 4,
       "name": "Anders Eliasson",
       "paid": false,
-      "points": 177
+      "points": 189
     },
     {
       "position": 5,
       "name": "Fredrik Olsson",
       "paid": true,
-      "points": 175
+      "points": 184
     },
     {
       "position": 6,
-      "name": "Christian Wallengren",
+      "name": "Lars Ljungblom",
       "paid": true,
-      "points": 172
+      "points": 183
     },
     {
       "position": 7,
-      "name": "Patrik Hermez",
+      "name": "Christian Wallengren",
       "paid": true,
-      "points": 171
+      "points": 183
     },
     {
       "position": 8,
       "name": "Andreas Hafvenström",
       "paid": true,
-      "points": 171
+      "points": 183
     },
     {
       "position": 9,
-      "name": "Fredric Kallebäck",
+      "name": "Jakob Horn",
       "paid": true,
-      "points": 167
+      "points": 183
     },
     {
       "position": 10,
-      "name": "Per Nilsson",
-      "paid": false,
-      "points": 167
+      "name": "Patrik Hermez",
+      "paid": true,
+      "points": 179
     },
     {
       "position": 11,
       "name": "Mikael Bergqvist",
       "paid": false,
-      "points": 167
+      "points": 177
     },
     {
       "position": 12,
-      "name": "Jakob Horn",
-      "paid": true,
-      "points": 167
+      "name": "Tim Håkman",
+      "paid": false,
+      "points": 177
     },
     {
       "position": 13,
-      "name": "Albin Löfborg",
-      "paid": false,
-      "points": 166
+      "name": "Oskar Amund",
+      "paid": true,
+      "points": 177
     },
     {
       "position": 14,
-      "name": "Tim Håkman",
-      "paid": false,
-      "points": 165
+      "name": "Fredric Kallebäck",
+      "paid": true,
+      "points": 176
     },
     {
       "position": 15,
-      "name": "Aleksandra Stojcevska",
+      "name": "Per Nilsson",
       "paid": false,
-      "points": 164
+      "points": 176
     },
     {
       "position": 16,
-      "name": "Oskar Amund",
-      "paid": true,
-      "points": 163
+      "name": "Aleksandra Stojcevska",
+      "paid": false,
+      "points": 176
     },
     {
       "position": 17,
       "name": "Jenny Nordgren",
       "paid": true,
-      "points": 163
+      "points": 175
     },
     {
       "position": 18,
-      "name": "Maziyar Fatemi",
-      "paid": false,
-      "points": 163
+      "name": "Christoffer Stamgren",
+      "paid": true,
+      "points": 174
     },
     {
       "position": 19,
       "name": "Petri Valo",
       "paid": true,
-      "points": 161
+      "points": 172
     },
     {
       "position": 20,
-      "name": "Stefan Setterlund",
-      "paid": true,
-      "points": 160
+      "name": "Maziyar Fatemi",
+      "paid": false,
+      "points": 170
     },
     {
       "position": 21,
       "name": "Mari Leion",
       "paid": true,
-      "points": 160
+      "points": 167
     },
     {
       "position": 22,
-      "name": "Fredrik Hansson",
+      "name": "Pontus Thorsen",
       "paid": true,
-      "points": 158
+      "points": 167
     },
     {
       "position": 23,
-      "name": "Christoffer Stamgren",
+      "name": "Stefan Setterlund",
       "paid": true,
-      "points": 156
+      "points": 166
     },
     {
       "position": 24,
-      "name": "Håkan Hansson",
-      "paid": false,
-      "points": 155
+      "name": "Fredrik Hansson",
+      "paid": true,
+      "points": 166
     },
     {
       "position": 25,
-      "name": "Pontus Thorsen",
-      "paid": true,
-      "points": 153
+      "name": "Håkan Hansson",
+      "paid": false,
+      "points": 165
     },
     {
       "position": 26,
       "name": "Andreas Astlund",
       "paid": true,
-      "points": 152
+      "points": 165
     },
     {
       "position": 27,
       "name": "Victor Gustavsson",
       "paid": true,
-      "points": 148
+      "points": 163
     },
     {
       "position": 28,
       "name": "Carolina Broddéus",
       "paid": true,
-      "points": 148
+      "points": 160
     },
     {
       "position": 29,
-      "name": "Anna Berglind",
-      "paid": false,
-      "points": 146
+      "name": "Stefan Lindberg",
+      "paid": true,
+      "points": 159
     },
     {
       "position": 30,
-      "name": "Stefan Lindberg",
-      "paid": true,
-      "points": 145
+      "name": "Anna Berglind",
+      "paid": false,
+      "points": 158
     },
     {
       "position": 31,
       "name": "Maria Löfvenholm",
       "paid": true,
-      "points": 144
+      "points": 158
     },
     {
       "position": 32,
-      "name": "Shanna Salehi",
-      "paid": true,
-      "points": 139
+      "name": "Marcus Andersson",
+      "paid": false,
+      "points": 151
     },
     {
       "position": 33,
-      "name": "Marcus Andersson",
-      "paid": false,
-      "points": 136
+      "name": "Jon Jonsson",
+      "paid": true,
+      "points": 148
     },
     {
       "position": 34,
-      "name": "Jon Jonsson",
+      "name": "Shanna Salehi",
       "paid": true,
-      "points": 135
+      "points": 147
     },
     {
       "position": 35,
       "name": "Ditte Clemons",
       "paid": true,
-      "points": 119
+      "points": 132
     }
   ],
   "matches": [
@@ -461,10 +461,10 @@
       "date": "2026-06-26",
       "home": "Turkiet",
       "away": "USA",
-      "homeGoals": null,
-      "awayGoals": null,
-      "score": "–",
-      "status": "kommande"
+      "homeGoals": 3,
+      "awayGoals": 2,
+      "score": "3–2",
+      "status": "spelad"
     },
     {
       "section": "Grupp D",
@@ -472,10 +472,10 @@
       "date": "2026-06-26",
       "home": "Paraguay",
       "away": "Australien",
-      "homeGoals": null,
-      "awayGoals": null,
-      "score": "–",
-      "status": "kommande"
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "score": "0–0",
+      "status": "spelad"
     },
     {
       "section": "Grupp E",
@@ -593,10 +593,10 @@
       "date": "2026-06-26",
       "home": "Japan",
       "away": "Sverige",
-      "homeGoals": null,
-      "awayGoals": null,
-      "score": "–",
-      "status": "kommande"
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "score": "1–1",
+      "status": "spelad"
     },
     {
       "section": "Grupp F",
@@ -604,10 +604,10 @@
       "date": "2026-06-26",
       "home": "Tunisien",
       "away": "Nederländerna",
-      "homeGoals": null,
-      "awayGoals": null,
-      "score": "–",
-      "status": "kommande"
+      "homeGoals": 1,
+      "awayGoals": 3,
+      "score": "1–3",
+      "status": "spelad"
     },
     {
       "section": "Grupp G",
@@ -1031,7 +1031,7 @@
       "section": "Sextondelsfinal",
       "match": 75,
       "date": "2026-06-30",
-      "home": "Vinnare grupp F",
+      "home": "Nederländerna",
       "away": "Marocko",
       "homeGoals": null,
       "awayGoals": null,
@@ -1043,7 +1043,7 @@
       "match": 76,
       "date": "2026-06-29",
       "home": "Brasilien",
-      "away": "Tvåa grupp F",
+      "away": "Japan",
       "homeGoals": null,
       "awayGoals": null,
       "score": "–",
@@ -1097,7 +1097,7 @@
       "section": "Sextondelsfinal",
       "match": 81,
       "date": "2026-07-02",
-      "home": "Vinnare grupp D",
+      "home": "USA",
       "away": "Bästa trea BEFIJ",
       "homeGoals": null,
       "awayGoals": null,
@@ -1174,7 +1174,7 @@
       "section": "Sextondelsfinal",
       "match": 88,
       "date": "2026-07-03",
-      "home": "Tvåa grupp D",
+      "home": "Australien",
       "away": "Tvåa grupp G",
       "homeGoals": null,
       "awayGoals": null,
