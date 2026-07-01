@@ -1,215 +1,215 @@
 {
-  "updated": "2026-07-01 00:02",
+  "updated": "2026-07-01 07:55",
   "leaderboard": [
     {
       "position": 1,
       "name": "Marcus Nilsson",
       "paid": true,
-      "points": 274
+      "points": 281
     },
     {
       "position": 2,
       "name": "Andreas Hafvenström",
       "paid": true,
-      "points": 268
+      "points": 277
     },
     {
       "position": 3,
       "name": "Lee Brustad",
       "paid": true,
-      "points": 264
+      "points": 269
     },
     {
       "position": 4,
       "name": "Fredrik Olsson",
       "paid": true,
-      "points": 252
+      "points": 259
     },
     {
       "position": 5,
       "name": "Aleksandra Stojcevska",
       "paid": false,
-      "points": 250
+      "points": 257
     },
     {
       "position": 6,
-      "name": "Albin Löfborg",
-      "paid": false,
-      "points": 250
+      "name": "Patrik Hermez",
+      "paid": true,
+      "points": 254
     },
     {
       "position": 7,
-      "name": "Patrik Hermez",
+      "name": "Albin Löfborg",
+      "paid": false,
+      "points": 252
+    },
+    {
+      "position": 8,
+      "name": "Christian Wallengren",
+      "paid": true,
+      "points": 249
+    },
+    {
+      "position": 9,
+      "name": "Oskar Amund",
+      "paid": true,
+      "points": 248
+    },
+    {
+      "position": 10,
+      "name": "Petri Valo",
       "paid": true,
       "points": 247
     },
     {
-      "position": 8,
-      "name": "Petri Valo",
-      "paid": true,
+      "position": 11,
+      "name": "Anders Eliasson",
+      "paid": false,
       "points": 245
     },
     {
-      "position": 9,
-      "name": "Anders Eliasson",
-      "paid": false,
-      "points": 243
-    },
-    {
-      "position": 10,
-      "name": "Christian Wallengren",
-      "paid": true,
-      "points": 242
-    },
-    {
-      "position": 11,
+      "position": 12,
       "name": "Lars Ljungblom",
       "paid": true,
-      "points": 241
-    },
-    {
-      "position": 12,
-      "name": "Oskar Amund",
-      "paid": true,
-      "points": 241
+      "points": 243
     },
     {
       "position": 13,
       "name": "Fredric Kallebäck",
       "paid": true,
-      "points": 236
+      "points": 241
     },
     {
       "position": 14,
-      "name": "Christoffer Stamgren",
-      "paid": true,
-      "points": 236
+      "name": "Mikael Bergqvist",
+      "paid": false,
+      "points": 239
     },
     {
       "position": 15,
-      "name": "Mikael Bergqvist",
-      "paid": false,
-      "points": 232
+      "name": "Christoffer Stamgren",
+      "paid": true,
+      "points": 237
     },
     {
       "position": 16,
       "name": "Pontus Thorsen",
       "paid": true,
-      "points": 229
+      "points": 231
     },
     {
       "position": 17,
       "name": "Jakob Horn",
       "paid": true,
-      "points": 228
+      "points": 230
     },
     {
       "position": 18,
       "name": "Stefan Setterlund",
       "paid": true,
-      "points": 227
+      "points": 228
     },
     {
       "position": 19,
-      "name": "Tim Håkman",
-      "paid": false,
-      "points": 225
+      "name": "Stefan Lindberg",
+      "paid": true,
+      "points": 228
     },
     {
       "position": 20,
-      "name": "Jenny Nordgren",
-      "paid": true,
-      "points": 224
+      "name": "Tim Håkman",
+      "paid": false,
+      "points": 227
     },
     {
       "position": 21,
-      "name": "Maziyar Fatemi",
-      "paid": false,
-      "points": 223
+      "name": "Jenny Nordgren",
+      "paid": true,
+      "points": 226
     },
     {
       "position": 22,
-      "name": "Per Nilsson",
+      "name": "Maziyar Fatemi",
       "paid": false,
-      "points": 219
+      "points": 224
     },
     {
       "position": 23,
-      "name": "Stefan Lindberg",
-      "paid": true,
-      "points": 219
+      "name": "Per Nilsson",
+      "paid": false,
+      "points": 224
     },
     {
       "position": 24,
       "name": "Fredrik Hansson",
       "paid": true,
-      "points": 217
+      "points": 219
     },
     {
       "position": 25,
       "name": "Mari Leion",
       "paid": true,
-      "points": 216
+      "points": 218
     },
     {
       "position": 26,
-      "name": "Håkan Hansson",
-      "paid": false,
-      "points": 214
+      "name": "Carolina Broddéus",
+      "paid": true,
+      "points": 216
     },
     {
       "position": 27,
-      "name": "Carolina Broddéus",
-      "paid": true,
-      "points": 214
+      "name": "Håkan Hansson",
+      "paid": false,
+      "points": 215
     },
     {
       "position": 28,
       "name": "Victor Gustavsson",
       "paid": true,
-      "points": 213
+      "points": 215
     },
     {
       "position": 29,
       "name": "Anna Berglind",
       "paid": false,
-      "points": 209
+      "points": 210
     },
     {
       "position": 30,
       "name": "Maria Löfvenholm",
       "paid": true,
-      "points": 208
+      "points": 210
     },
     {
       "position": 31,
       "name": "Andreas Astlund",
       "paid": true,
-      "points": 205
+      "points": 207
     },
     {
       "position": 32,
       "name": "Shanna Salehi",
       "paid": true,
-      "points": 204
+      "points": 206
     },
     {
       "position": 33,
       "name": "Marcus Andersson",
       "paid": false,
-      "points": 200
+      "points": 202
     },
     {
       "position": 34,
       "name": "Jon Jonsson",
       "paid": true,
-      "points": 183
+      "points": 185
     },
     {
       "position": 35,
       "name": "Ditte Clemons",
       "paid": true,
-      "points": 179
+      "points": 181
     }
   ],
   "matches": [
@@ -1055,10 +1055,10 @@
       "date": "2026-06-30",
       "home": "Frankrike",
       "away": "Sverige",
-      "homeGoals": null,
-      "awayGoals": null,
-      "score": "–",
-      "status": "kommande"
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "score": "3–0",
+      "status": "spelad"
     },
     {
       "section": "Sextondelsfinal",
@@ -1186,7 +1186,7 @@
       "match": 89,
       "date": "2026-07-04",
       "home": "Paraguay",
-      "away": "Vinnare match 77",
+      "away": "Frankrike",
       "homeGoals": null,
       "awayGoals": null,
       "score": "–",
