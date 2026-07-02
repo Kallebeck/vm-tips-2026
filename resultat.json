@@ -1,215 +1,215 @@
 {
-  "updated": "2026-07-02 00:50",
+  "updated": "2026-07-02 07:48",
   "leaderboard": [
     {
       "position": 1,
       "name": "Andreas Hafvenström",
       "paid": true,
-      "points": 286
+      "points": 288
     },
     {
       "position": 2,
       "name": "Marcus Nilsson",
       "paid": true,
-      "points": 284
+      "points": 286
     },
     {
       "position": 3,
       "name": "Lee Brustad",
       "paid": true,
-      "points": 276
+      "points": 280
     },
     {
       "position": 4,
       "name": "Petri Valo",
       "paid": true,
-      "points": 263
+      "points": 268
     },
     {
       "position": 5,
       "name": "Fredrik Olsson",
       "paid": true,
-      "points": 262
+      "points": 264
     },
     {
       "position": 6,
       "name": "Aleksandra Stojcevska",
       "paid": false,
-      "points": 260
+      "points": 262
     },
     {
       "position": 7,
       "name": "Christian Wallengren",
       "paid": true,
-      "points": 258
+      "points": 260
     },
     {
       "position": 8,
       "name": "Patrik Hermez",
       "paid": true,
-      "points": 257
+      "points": 259
     },
     {
       "position": 9,
       "name": "Albin Löfborg",
       "paid": false,
-      "points": 255
+      "points": 257
     },
     {
       "position": 10,
       "name": "Oskar Amund",
       "paid": true,
-      "points": 252
+      "points": 254
     },
     {
       "position": 11,
-      "name": "Anders Eliasson",
-      "paid": false,
-      "points": 248
+      "name": "Fredric Kallebäck",
+      "paid": true,
+      "points": 253
     },
     {
       "position": 12,
-      "name": "Fredric Kallebäck",
-      "paid": true,
-      "points": 248
+      "name": "Anders Eliasson",
+      "paid": false,
+      "points": 250
     },
     {
       "position": 13,
       "name": "Lars Ljungblom",
       "paid": true,
-      "points": 246
+      "points": 248
     },
     {
       "position": 14,
       "name": "Christoffer Stamgren",
       "paid": true,
-      "points": 244
+      "points": 245
     },
     {
       "position": 15,
       "name": "Mikael Bergqvist",
       "paid": false,
-      "points": 242
+      "points": 244
     },
     {
       "position": 16,
       "name": "Jenny Nordgren",
       "paid": true,
-      "points": 240
+      "points": 242
     },
     {
       "position": 17,
       "name": "Pontus Thorsen",
       "paid": true,
-      "points": 238
+      "points": 240
     },
     {
       "position": 18,
       "name": "Stefan Setterlund",
       "paid": true,
-      "points": 237
+      "points": 239
     },
     {
       "position": 19,
       "name": "Jakob Horn",
       "paid": true,
-      "points": 233
+      "points": 235
     },
     {
       "position": 20,
       "name": "Maziyar Fatemi",
       "paid": false,
-      "points": 232
+      "points": 234
     },
     {
       "position": 21,
       "name": "Stefan Lindberg",
       "paid": true,
-      "points": 231
+      "points": 232
     },
     {
       "position": 22,
       "name": "Tim Håkman",
       "paid": false,
-      "points": 230
+      "points": 232
     },
     {
       "position": 23,
       "name": "Per Nilsson",
       "paid": false,
-      "points": 227
+      "points": 228
     },
     {
       "position": 24,
       "name": "Carolina Broddéus",
       "paid": true,
-      "points": 224
+      "points": 226
     },
     {
       "position": 25,
       "name": "Fredrik Hansson",
       "paid": true,
-      "points": 222
+      "points": 224
     },
     {
       "position": 26,
       "name": "Mari Leion",
       "paid": true,
-      "points": 221
+      "points": 223
     },
     {
       "position": 27,
       "name": "Victor Gustavsson",
       "paid": true,
-      "points": 218
+      "points": 220
     },
     {
       "position": 28,
       "name": "Håkan Hansson",
       "paid": false,
-      "points": 218
+      "points": 220
     },
     {
       "position": 29,
       "name": "Anna Berglind",
       "paid": false,
-      "points": 213
+      "points": 214
     },
     {
       "position": 30,
       "name": "Maria Löfvenholm",
       "paid": true,
-      "points": 213
+      "points": 214
     },
     {
       "position": 31,
       "name": "Marcus Andersson",
       "paid": false,
-      "points": 211
+      "points": 213
     },
     {
       "position": 32,
-      "name": "Andreas Astlund",
+      "name": "Shanna Salehi",
       "paid": true,
-      "points": 209
+      "points": 211
     },
     {
       "position": 33,
-      "name": "Shanna Salehi",
+      "name": "Andreas Astlund",
       "paid": true,
-      "points": 209
+      "points": 210
     },
     {
       "position": 34,
       "name": "Jon Jonsson",
       "paid": true,
-      "points": 188
+      "points": 190
     },
     {
       "position": 35,
       "name": "Ditte Clemons",
       "paid": true,
-      "points": 184
+      "points": 186
     }
   ],
   "matches": [
@@ -1110,10 +1110,10 @@
       "date": "2026-07-01",
       "home": "Belgien",
       "away": "Senegal",
-      "homeGoals": null,
-      "awayGoals": null,
-      "score": "–",
-      "status": "kommande"
+      "homeGoals": 3,
+      "awayGoals": 2,
+      "score": "3–2",
+      "status": "spelad"
     },
     {
       "section": "Sextondelsfinal",
@@ -1241,7 +1241,7 @@
       "match": 94,
       "date": "2026-07-07",
       "home": "Vinnare match 81",
-      "away": "Vinnare match 82",
+      "away": "Belgien",
       "homeGoals": null,
       "awayGoals": null,
       "score": "–",
