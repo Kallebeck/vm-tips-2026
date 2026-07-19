@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20 00:30",
+  "updated": "2026-07-20 01:34",
   "leaderboard": [
     {
       "position": 1,
@@ -123,45 +123,45 @@
     },
     {
       "position": 21,
+      "name": "Fredrik Hansson",
+      "paid": true,
+      "points": 337
+    },
+    {
+      "position": 22,
       "name": "Shanna Salehi",
       "paid": true,
       "points": 333
     },
     {
-      "position": 22,
+      "position": 23,
+      "name": "Victor Gustavsson",
+      "paid": true,
+      "points": 332
+    },
+    {
+      "position": 24,
       "name": "Christoffer Stamgren",
       "paid": true,
       "points": 331
     },
     {
-      "position": 23,
+      "position": 25,
       "name": "Anna Berglind",
       "paid": false,
       "points": 328
     },
     {
-      "position": 24,
-      "name": "Fredrik Hansson",
-      "paid": true,
-      "points": 327
-    },
-    {
-      "position": 25,
+      "position": 26,
       "name": "Marcus Andersson",
       "paid": false,
       "points": 324
     },
     {
-      "position": 26,
+      "position": 27,
       "name": "Maziyar Fatemi",
       "paid": false,
       "points": 323
-    },
-    {
-      "position": 27,
-      "name": "Victor Gustavsson",
-      "paid": true,
-      "points": 322
     },
     {
       "position": 28,
